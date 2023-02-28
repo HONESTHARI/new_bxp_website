@@ -1,8 +1,7 @@
 import React from "react";
 // import Navbar from './navbar'
 // import Navbar from "./code-ref/spl_nav";
-import Nav3 from "./code-ref/nav3";
-import Tables from "./code-ref/table";
+import Tables from "./components/code-ref/table";
 // import Footer from "./code-ref/footer";
 // import Sub_careers from './code-ref/sub_careers';
 
@@ -10,7 +9,6 @@ export default function Careers() {
   return (
     <>
       {/* <Navbar /> */}
-    <Nav3/>
 
       {/* ***************** SECTION ==> 1 **************** */}
 

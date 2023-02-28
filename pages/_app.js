@@ -1,6 +1,6 @@
 import '@/styles/globals.css'
-import Nav3 from './components/code-ref/nav3'
-import Footer1 from './components/code-ref/footer1'
+import Footer1 from './components/footer'
+import Navbar from './components/navbar'
 
 
 export default function App({ Component, pageProps }) {
@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
   <>
 
 
-<Nav3/>
+<Navbar/>
 
 
   <Component {...pageProps} />

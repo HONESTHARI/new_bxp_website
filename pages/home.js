@@ -1,6 +1,4 @@
 import React from "react";
-// import Team from "./code-ref/Team-Sections";
-// import Accordion from '../components/code-ref/CustomAccordionAnimation'
 
 const logos = [
   {

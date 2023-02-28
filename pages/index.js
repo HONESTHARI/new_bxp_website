@@ -5,7 +5,7 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 // import Header from "../pages/components/header";
 // import Screen1 from '../pages/components/code-ref/mobile_screens/screen1'
-import Section from "./components/Section";
+import Section from "./home";
 // import Ph_home from './components/code-ref/ph_home'
 // import Ph_home1 from './components/code-ref/ph_home1'
 //  import Landing from './components/code-ref/landing-page'

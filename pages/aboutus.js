@@ -1,15 +1,9 @@
 import React from "react";
-import Nav3 from "./code-ref/nav3";
-// import Navbar from "./code-ref/spl_nav";
-// import Navbar from "./navbar";
-// import Header from "../components/header";
-import Counters from "./code-ref/counters";
 
 export default function AboutUs() {
   return (
     <>
       {/* <Navbar /> */}
-      <Nav3 />
       {/* <Header/> */}
 
       <div className="bg-repeat-x bg-center  bg-white pt-20">
@@ -111,9 +105,9 @@ export default function AboutUs() {
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokelinecap="round"
+                    strokelinejoin="round"
+                    strokewidth="2"
                     class="text-indigo-500 w-12 h-12 mb-3 inline-block"
                     viewBox="0 0 24 24"
                   >
@@ -131,9 +125,9 @@ export default function AboutUs() {
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokelinecap="round"
+                    strokelinejoin="round"
+                    strokewidth="2"
                     class="text-indigo-500 w-12 h-12 mb-3 inline-block"
                     viewBox="0 0 24 24"
                   >
@@ -152,9 +146,9 @@ export default function AboutUs() {
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokelinecap="round"
+                    strokelinejoin="round"
+                    strokewidth="2"
                     class="text-indigo-500 w-12 h-12 mb-3 inline-block"
                     viewBox="0 0 24 24"
                   >
@@ -215,7 +209,7 @@ export default function AboutUs() {
         </div>
 
         <div>
-          <p className="text-center">
+          <div className="text-center">
             <div className="pb-20">
               <div className="text-center">
                 <p>
@@ -227,7 +221,7 @@ export default function AboutUs() {
                 </p>
               </div>
             </div>
-          </p>
+          </div>
         </div>
 
 
