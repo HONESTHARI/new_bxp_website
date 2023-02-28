@@ -1,11 +1,9 @@
-import React from 'react'
-import Head from 'next/head';
-import Link from 'next/link';
-import { useState } from 'react';
-import { images } from '@/next.config';
-import Image from 'next/image';
-
-
+import React from "react";
+import Head from "next/head";
+import Link from "next/link";
+import { useState } from "react";
+import { images } from "@/next.config";
+import Image from "next/image";
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -21,48 +19,38 @@ export default function Navbar() {
       </Head>
       <nav className="fixed w-full bg-white text-blue-900 shadow mb-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-       
-       
-       
-        <div>
+          <div>
             <div
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? 'block' : 'hidden'
+                navbar ? "block" : "hidden"
               }`}
             >
               <ul className="items-center font-bold justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li>
-                  <Link href="/">
-                    Content Changed
-                  </Link>
+                  <Link href="/">Content</Link>
                 </li>
-                
+
                 <li>
-                  <Link href="/components/AboutUs">
-                    About US
-                  </Link>
+                  <Link href="/components/AboutUs">About US</Link>
                 </li>
                 <li>
-                  <Link href="/components/Careers">
-                 Careers
-                  </Link>
+                  <Link href="/components/Careers">Careers</Link>
                 </li>
               </ul>
             </div>
           </div>
-         
-         
+
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <a href="#">
                 <h2 className="text-sm text-blue-800 font-bold logo">
-<Image
-    src='/bxplogo.png'
-    alt="Logo"
-    width="200"
-    height="200"
-    className="h-18 w-20 md:h-30 md:w-32" // this won't work
-  />
+                  <Image
+                    src="/bxplogo.png"
+                    alt="Logo"
+                    width="300"
+                    height="300"
+                    className="h-18 w-20 md:h-30 md:w-32" // this won't work
+                  />
                 </h2>
               </a>
               <div className="md:hidden">
@@ -103,22 +91,20 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-         
 
           <div>
             <div
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? 'block' : 'hidden'
+                navbar ? "block" : "hidden"
               }`}
             >
-             <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-  Book A Demo
-</button>
+              <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                Book A Demo
+              </button>
             </div>
           </div>
         </div>
       </nav>
-     
     </div>
   );
 }

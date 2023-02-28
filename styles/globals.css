@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -82,6 +83,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color:#121316;
+  font-family: LLCircularWeb;
 }
 
 html,
@@ -129,4 +132,74 @@ a {
 
 .COLOR{
   color:#021E41;
+}
+
+.bg_img{
+  background-image: url('../images/New_bxp_imgs/bg_imgs/bgimg.jpg');
+}
+
+
+
+/* ******************Section Manual css ********************* */
+@media (max-width: 800px){
+.glb_h2{
+  font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+
+
+.gbl_center{
+  text-align: center;
+  
+}
+
+}
+
+@media screen and (max-width: 760px) {
+  .breakhidden br {
+    display: none; /* hide the BR tag for wider screens (i.e. disable the line break) */
+  }
+ 
+}
+
+.contentpad{
+  max-width:1200px;
+  width:100%;
+}
+
+
+.btn_color{
+  background-color: #c8e9f9;
+  color:#195da0;
+}
+
+
+
+
+/* ******************Careers Manual css ********************* */
+
+
+
+
+/* ***********************About Us ************************************* */
+
+.text_color{
+  color:#098B8c;
+}
+
+
+.text_color1
+{
+  color:#021E41;
+}
+
+.text_color2{
+  color:#001E42;
+}
+
+.text_color3{
+  color:4A4B4E;
+}
+.para_text{
+ color: #121316;
 }
