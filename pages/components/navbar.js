@@ -117,7 +117,7 @@ export default function Navbar() {
                       "group inline-flex items-center rounded-md bg-transparent text-white font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                     )}
                   >
-                    <span className='text-white'>Solutions</span>
+                    <span className='text-white'>Services</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",

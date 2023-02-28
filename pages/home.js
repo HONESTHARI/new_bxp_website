@@ -29,30 +29,32 @@ const logos = [
 
 export default function Section() {
   return (
-    
     <div className="pt-20 items-center justify-center h-auto bg-white  bg-fixed bg-center bg-cover ">
       {/* ***************** SECTION ==> 1 **************** */}
-      <div className="xl:container 2xl:mx-auto  lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4 text-white"
+      <div
+        className="xl:container 2xl:mx-auto  py-20 lg:py-24 lg:px-20 md:py-12 md:px-6  px-4 text-white"
         style={{ background: "#062d60" }}
       >
-        <div className="flex flex-col lg:flex-row justify-center gap-8 px-8 ">
-          <div className="w-full lg:w-5/12  lg:text-left ">
-            <h1 className="text-4xl lg:text-5xl text-white font-bold    pb-4 gbl_center glb_h2 breakhidden">
+        <div className="flex flex-col lg:flex-row justify-center px-8 ">
+          <div className="w-full leading-10 lg:w-5/12 lg:ml-16 pb-16 lg:text-left ">
+            <h1 className="text-4xl lg:text-5xl text-white font-bold lg:pb-8 gbl_center glb_h2 breakhidden">
               {" "}
-              You run your
-              <br /> business.
-              <br /> We’ll handle your <br /> finances.
+              Run your business,
+              <br /> While we do
+              <br /> The accounting.
             </h1>
             <p className="font-normal text-base leading-6 text-center lg:text-left  text-white">
-              From bookkeeping to tax filing, Bench is the all-in-one financial
-              toolkit your business can count on.
+              Experience Efficient Accounting and Returns Preparation along with
+              Customized MIS Reports for Decision Making with Bookxpert,your
+              virtual real-time Accounting partner thereby giving you enough
+              Time to Focus on your Core Tasks.
             </p>
-            <button class="lg:w-1/3 block  lg:inline-block sm:w-1/4 sm:text-center m-auto lg:ml-0 my-5 hover:bg-white text-white font-semibold hover:text-blue-800 py-2 px-4 border border-white hover:border-transparent rounded">
+            <button className="lg:w-1/3 block  lg:inline-block sm:w-1/4 sm:text-center m-auto lg:ml-0 my-5 hover:bg-white text-white font-semibold hover:text-blue-800 py-2 px-4 border border-white hover:border-transparent rounded">
               Book A Demo
             </button>
           </div>
 
-          <div className="w-full lg:w-6/12 ">
+          <div className="w-full lg:w-7/12 ">
             <img
               className="w-full h-full"
               src="https://images.ctfassets.net/88a6qmzs2wdz/7zBHsyElF4x3Bo0PzWs8NS/aaeae132c5cb261b07c7972d3a1fbdc6/20220113_HomePageVisualUpdates_Home_Desktop_Final.png?h=395&q=90&w=670"
@@ -64,10 +66,10 @@ export default function Section() {
 
       {/* ***************** SECTION ==> 2 **************** */}
       <div
-        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 text-white pt-5  items-center justify-center h-auto  bg-fixed bg-center bg-cover"
+        className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 py-20 lg:grid-cols-3 xl:grid-cols-3  text-white   items-center justify-center"
         style={{ background: "#f7f8fa" }}
       >
-        <div className="hidden lg:block mt-16 h-80 lg:mt-28 mx-auto">
+        <div className="hidden lg:block   mx-auto">
           <img
             className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             src="https://images.ctfassets.net/88a6qmzs2wdz/1dLJZFfakIm6ze6ySJAzRS/19329d5a2f956af08c6ec75c15fdf218/TaxHub-Left.png?h=236&q=90&w=170"
@@ -77,50 +79,52 @@ export default function Section() {
           />
         </div>
 
-        <div className="lg:mx-auto text-center text-black lg:flex-auto lg:py-32 pt-20 ">
-          <h2 className="text-xl font-bold tracking-tight  sm:text-4xl">
+        <div className=" text-center text-black ">
+          <h2 className="text-xl font-bold sm:text-4xl">
             Are you ready for tax season?
           </h2>
-          <p className="my-3 text-sm text-black leading-5 lg:-px-10 px-10 font-semibold">
+          <p className="my-3 text-sm text-black leading-5 px-10 font-semibold">
             Get exclusive access to deadline reminders, free checklists and more
             in our Tax Resource Hub.
           </p>
 
-          <button class=" my-5 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+          <button className=" my-5 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
             Book A Demo
           </button>
 
-          <p className="my-3 text-sm text-black leading-5 px-10 font-semibold">
+          <p className="my-3 text-md text-black  font-semibold">
             If you're several years behind on business taxes, get caught up and
             filed with Bench Retro.
           </p>
         </div>
 
-        <div className="mt-16 h-50 lg:h-80 lg:mt-28 mx-auto">
+        <div className="mx-auto">
           <img
             className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-            src="https://images.ctfassets.net/88a6qmzs2wdz/1dLJZFfakIm6ze6ySJAzRS/19329d5a2f956af08c6ec75c15fdf218/TaxHub-Left.png?h=236&q=90&w=170"
+            src="https://images.ctfassets.net/88a6qmzs2wdz/6tia5roEXDz2daFkUPIFMt/524a4ce1da60bbe68330d41cea3f0f3f/TaxHub-Right.png?h=235&q=90&w=170"
             alt="App screenshot"
             width={1920}
             height={1080}
           />
         </div>
       </div>
+
       {/* ***************** SECTION ==> 3 **************** */}
       <div className="max-w-none pt-10 items-center justify-center h-auto  bg-white bg-fixed bg-center bg-cover ">
         <div>
           <h2 className=" lg:text-3xl text-center font-bold text-lg  lg:p-8 p-8 py-5">
-            Helping small businesses navigate tax season since 2012
+            We are on a journey to simplify accounting & bookkeeping for MSMEs &
+            Auditors.
           </h2>
         </div>
 
-        <div class=" font-medium lg:w-4/5 lg:mx-auto lg:p-10 p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 ">
-          <div class=" md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
+        <div className=" font-medium lg:w-4/5 lg:mx-auto lg:p-10 p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 ">
+          <div className=" md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
             <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
-            {/* <img class="w-full" src="" alt="Mountain"/> */}
+            {/* <img className="w-full" src="" alt="Mountain"/> */}
 
-            <div class=" py-4">
-              <p class=" text-base ">
+            <div className=" py-4">
+              <p className=" text-base ">
                 "Now that Bench has a tax solution service, they're a 'one stop
                 shop' for small businesses to manage their books and taxes."
               </p>
@@ -140,12 +144,12 @@ export default function Section() {
             </div>
           </div>
 
-          <div class=" md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
+          <div className=" md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
             <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
-            {/* <img class="w-full" src="" alt="Mountain"/> */}
+            {/* <img className="w-full" src="" alt="Mountain"/> */}
 
-            <div class=" py-4">
-              <p class=" text-base">
+            <div className=" py-4">
+              <p className=" text-base">
                 "This is the first year where it’s tax season and I don’t feel
                 anxious one bit."
               </p>
@@ -163,12 +167,12 @@ export default function Section() {
             </div>
           </div>
 
-          <div class=" md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
+          <div className=" md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
             <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
-            {/* <img class="w-full" src="" alt="Mountain"/> */}
+            {/* <img className="w-full" src="" alt="Mountain"/> */}
 
-            <div class=" py-4">
-              <p class=" text-base">
+            <div className=" py-4">
+              <p className=" text-base">
                 "Ripping your hair out at tax time? All I have to say is I'm so
                 glad I used Bench last year!"{" "}
               </p>
@@ -189,10 +193,12 @@ export default function Section() {
         </div>
       </div>
 
-<div className="w-80 lg:w-3/4 mx-auto border border-gray-200"></div>
-
       {/* ***************** SECTION ==> 4 **************** */}
-      <div className="flex  lg:flex-row flex-col-reverse justify-center gap-8  p-10  ">
+
+      <div className="w-80 lg:w-3/4 mx-auto border border-gray-200"></div>
+
+      {/* ***************** SECTION ==> 5 **************** */}
+      <div className="flex  lg:flex-row flex-col-reverse justify-center gap-14 py-10  ">
         <div className=" lg:w-5/12 ">
           <img
             className="h-full"
@@ -200,20 +206,20 @@ export default function Section() {
             alt="A group of People"
           />
         </div>
-        <div className="w-full lg:w-5/12 flex flex-col justify-center">
-          <h1 className="text-xl lg:text-4xl lg:text-left text-center font-bold leading-9 text-gray-800 ">
+        <div className="w-full lg:w-4/12 flex flex-col justify-center">
+          <h1 className="text-xl lg:text-4xl lg:text-left text-center font-bold py-5 leading-9 text-gray-800 ">
             {" "}
-            One-on-one expert support
+            No Delays , On - Time Reports
           </h1>
 
           <p className="font-medium text-base lg:mr-20 text-center lg:text-left para_text  ">
             {" "}
-            Bench gives you a dedicated bookkeeper supported by a team of
-            knowledgeable small business experts. Get a direct line to your team
-            on desktop or mobile—professional support is just a few swipes,
-            taps, or clicks away.
+            Gain access to accurate financial reports and documents, through our
+            owner ‘s app. Our financial reports will provide you with the
+            information you need, including updated financial statements &
+            one-on-one account managers for all of your needs.
           </p>
-          <button class="my-5 w-1/2 lg:w-1/3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+          <button className="my-5 w-1/2 lg:w-1/3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
             Book A Demo
           </button>
 
@@ -225,24 +231,23 @@ export default function Section() {
         </div>
       </div>
 
-      {/* ***************** SECTION ==> 5 **************** */}
+      {/* ***************** SECTION ==> 6 **************** */}
       <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
         <div className="flex flex-col lg:flex-row justify-center gap-8">
           <div className="w-full lg:w-5/12 flex flex-col justify-center">
             <h1 className="text-xl lg:text-4xl lg:text-left text-center font-bold leading-9 text-gray-800  ">
               {" "}
-              Powerful financial reporting
+              Relief from Departmental Levies
             </h1>
 
             <p className=" text-base lg:mr-20 text-center lg:text-left text-gray-600  ">
               {" "}
-              The Bench platform gives you monthly financial statements and
-              expense overviews to keep you in control of your money.
-              At-a-glance visual reports help you see the big picture and give
-              you actionable insights to help you grow your business. You’ll
-              never be in the dark again.
+              Delivery of monthly financial reports in advance helps with smooth
+              and perfect filing thereby helping businesses getting relief from
+              unnecessary departmental Levies like Fines, Penalties,Late Fees
+              etc.
             </p>
-            <button class="my-5 w-1/2 lg:w-1/3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            <button className="my-5 w-1/2 lg:w-1/3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
               Book A Demo
             </button>
           </div>
@@ -264,9 +269,17 @@ export default function Section() {
         </div>
       </div>
 
-      {/* ***************** SECTION ==> 6 **************** */}
-      <div className="flex flex-col-reverse lg:flex-row justify-center gap-8  p-10">
-        <div className=" lg:w-5/12">
+
+
+
+
+
+
+
+
+ {/* ***************** SECTION ==> 7 **************** */}
+ <div className="flex  lg:flex-row flex-col-reverse justify-center gap-14 py-10  ">
+        <div className=" lg:w-5/12 ">
           <img
             className="h-full"
             src="https://images.ctfassets.net/88a6qmzs2wdz/4LiGk1SkdfuUg18O8tVlqJ/f623064c0837101d882cd6385f4e4f3e/2023_Homepage_VP_Tax.png?h=354&q=90&w=570"
@@ -274,19 +287,17 @@ export default function Section() {
           />
         </div>
         <div className="w-full lg:w-5/12 flex flex-col justify-center">
-          <h1 className="text-xl lg:text-4xl lg:text-left text-center font-bold leading-9 text-gray-800 ">
+          <h1 className="text-lg lg:text-4xl lg:text-left text-center font-bold py-5 leading-9 text-gray-800 ">
             {" "}
-            Tax season, minus the stress
+            Assisting Auditors 
           </h1>
 
-          <p className=" text-base lg:mr-20 text-center lg:text-left text-gray-600  ">
+          <p className="font-medium text-base lg:mr-20 text-center lg:text-left para_text  ">
             {" "}
-            A year end package with everything you need to file comes standard
-            with Bench. Upgrade your plan, and cross even more off your to-do
-            list. With Premium, you get expert tax prep, filing, and year-round
-            tax advisory support.
+            We will provide Data in Reusable Formats along with supporting
+            documents within Deadlines for Attestation & Filing Returns.
           </p>
-          <button class="my-5 w-1/2 lg:w-1/3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+          <button className="my-5 w-1/2 lg:w-1/3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
             Book A Demo
           </button>
 
@@ -298,44 +309,79 @@ export default function Section() {
         </div>
       </div>
 
-      {/* ***************** SECTION ==> 7 **************** */}
-     
+
+
+      
+
+      {/* ***************** SECTION ==> 8 **************** */}
+      <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
+        <div className="flex flex-col lg:flex-row justify-center gap-8">
+          <div className="w-full lg:w-5/12 flex flex-col justify-center">
+            <h1 className="text-xl lg:text-4xl lg:text-left text-center font-bold leading-9 text-gray-800  ">
+              {" "}
+              Expert’s Analysis
+            </h1>
+
+            <p className=" text-base lg:mr-20 text-center lg:text-left text-gray-600  ">
+              {" "}
+              Our expert's analysis reports will help you in Planning of your
+              Stocks, Materials Required, Credit Flows etc.
+            </p>
+            <button className="my-5 w-1/2 lg:w-1/3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              Book A Demo
+            </button>
+          </div>
+
+          <div className=" lg:w-5/12">
+            <img
+              className="h-full"
+              src="https://images.ctfassets.net/88a6qmzs2wdz/60YZfXjE7UU0IqBarEgYK4/22461e400c9b393e8833046dd8fbeda6/2023_Homepage_VP_FinancialReporting.png?h=354&q=90&w=570"
+              alt="A group of People"
+            />
+          </div>
+          {/* 
+<div className=" lg:w-5/12">
+          <img className="h-full"
+            src="https://images.ctfassets.net/88a6qmzs2wdz/60YZfXjE7UU0IqBarEgYK4/22461e400c9b393e8833046dd8fbeda6/2023_Homepage_VP_FinancialReporting.png?h=354&q=90&w=570"
+            alt="A group of People"
+          />
+        </div> */}
+        </div>
+      </div>
+      {/* ***************** SECTION ==> 9 **************** */}
+
       <div className="max-w-none mb-10 pt-10 items-center justify-center h-auto bg-white bg-fixed bg-center bg-cover ">
         <div>
           <h2 className=" lg:text-3xl text-center font-bold text-lg  lg:p-8 p-8 py-5">
-          Explore over 600 resources for managing small business finances
+            Explore over 600 resources for managing small business finances
           </h2>
         </div>
 
-        <div class=" font-medium lg:w-4/5 lg:mx-auto lg:p-10 p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 ">
-
-
-          <div class="w-3/4 mx-auto md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
-          
-
-            <div class=" py-4">
-             <div class="h-full  overflow-hidden">
+        <div className=" font-medium lg:w-4/5 lg:mx-auto lg:p-10 p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 ">
+          <div className="w-3/4 mx-auto md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
+            <div className=" py-4">
+              <div className="h-full  overflow-hidden">
                 <img
-                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/2v3J5YNdud9NcKqGroidGE/922b6535d87717d0e9579f959b39beb2/BenchBlog_TaxTips_17BigTaxDeductions.png?h=255&q=90&w=270"
                   alt="blog"
                 />
-                <div class="p-6">
+                <div className="p-6">
                   <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
                   </h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     The Catalyzer
                   </h1>
-                  <p class="leading-relaxed mb-3">
+                  <p className="leading-relaxed mb-3">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>
-                  <div class="flex items-center flex-wrap ">
-                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                  <div className="flex items-center flex-wrap ">
+                    <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
                       Learn More
                       <svg
-                        class="w-4 h-4 ml-2"
+                        className="w-4 h-4 ml-2"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
                         stroke-width="2"
@@ -347,9 +393,9 @@ export default function Section() {
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
                     </a>
-                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                       <svg
-                        class="w-4 h-4 mr-1"
+                        className="w-4 h-4 mr-1"
                         stroke="currentColor"
                         stroke-width="2"
                         fill="none"
@@ -362,7 +408,7 @@ export default function Section() {
                       </svg>
                       1.2K
                     </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
                       <svg
                         class="w-4 h-4 mr-1"
                         stroke="currentColor"
@@ -382,33 +428,33 @@ export default function Section() {
             </div>
           </div>
 
-          <div class="w-3/4 mx-auto md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
+          <div className="w-3/4 mx-auto md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
             <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
             {/* <img class="w-full" src="" alt="Mountain"/> */}
 
-            <div class=" py-4">
-            <div class="h-full   overflow-hidden">
+            <div className=" py-4">
+              <div className="h-full   overflow-hidden">
                 <img
-                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/2jaEUtWACoVyDdRGmWCLaN/6c5da6d1d352948f8378f2f9b145c177/BenchBlog_Top12Qs.png?h=255&q=90&w=270"
                   alt="blog"
                 />
-                <div class="p-6">
+                <div className="p-6">
                   <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
                   </h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     The Catalyzer
                   </h1>
-                  <p class="leading-relaxed mb-3">
+                  <p className="leading-relaxed mb-3">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>
-                  <div class="flex items-center flex-wrap ">
-                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                  <div className="flex items-center flex-wrap ">
+                    <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
                       Learn More
                       <svg
-                        class="w-4 h-4 ml-2"
+                        className="w-4 h-4 ml-2"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
                         stroke-width="2"
@@ -420,9 +466,9 @@ export default function Section() {
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
                     </a>
-                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                       <svg
-                        class="w-4 h-4 mr-1"
+                        className="w-4 h-4 mr-1"
                         stroke="currentColor"
                         stroke-width="2"
                         fill="none"
@@ -435,9 +481,9 @@ export default function Section() {
                       </svg>
                       1.2K
                     </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
                       <svg
-                        class="w-4 h-4 mr-1"
+                        className="w-4 h-4 mr-1"
                         stroke="currentColor"
                         stroke-width="2"
                         fill="none"
@@ -455,33 +501,33 @@ export default function Section() {
             </div>
           </div>
 
-          <div class="w-3/4 mx-auto md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
+          <div className="w-3/4 mx-auto md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
             <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
-            {/* <img class="w-full" src="" alt="Mountain"/> */}
+            {/* <img className="w-full" src="" alt="Mountain"/> */}
 
-            <div class=" py-4">
-            <div class="h-full  overflow-hidden">
+            <div className=" py-4">
+              <div className="h-full  overflow-hidden">
                 <img
-                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/7Eu1demGJF7dvPI3H67Fv3/05d650cb773d41c921c1313657aca20a/BenchBlog_TaxTips_10Steps.png?h=255&q=90&w=270"
                   alt="blog"
                 />
-                <div class="p-6">
-                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                <div className="p-6">
+                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
                   </h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     The Catalyzer
                   </h1>
-                  <p class="leading-relaxed mb-3">
+                  <p className="leading-relaxed mb-3">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
                     jianbing microdosing tousled waistcoat.
                   </p>
-                  <div class="flex items-center flex-wrap ">
-                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                  <div className="flex items-center flex-wrap ">
+                    <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
                       Learn More
                       <svg
-                        class="w-4 h-4 ml-2"
+                        className="w-4 h-4 ml-2"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
                         stroke-width="2"
@@ -493,9 +539,9 @@ export default function Section() {
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
                     </a>
-                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                       <svg
-                        class="w-4 h-4 mr-1"
+                        className="w-4 h-4 mr-1"
                         stroke="currentColor"
                         stroke-width="2"
                         fill="none"
@@ -508,9 +554,9 @@ export default function Section() {
                       </svg>
                       1.2K
                     </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
                       <svg
-                        class="w-4 h-4 mr-1"
+                        className="w-4 h-4 mr-1"
                         stroke="currentColor"
                         stroke-width="2"
                         fill="none"
@@ -527,23 +573,19 @@ export default function Section() {
               </div>
             </div>
           </div>
-
-
         </div>
 
-       
         <div className="text-center  ">
-        <button class="  mx-auto bg-transparent lg:ml-0 hover:bg-blue-900 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+          <button className="  mx-auto bg-transparent lg:ml-0 hover:bg-blue-900 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
             Book A Demo
           </button>
-            </div>
-       
+        </div>
       </div>
 
-     {/* ***************** SECTION ==> 8 **************** */}
-     {/* <Accordion/> */}
+      {/* ***************** SECTION ==> 10 **************** */}
+      {/* <Accordion/> */}
 
-      {/* ***************** SECTION ==> 9 **************** */}
+      {/* ***************** SECTION ==> 11 **************** */}
       <div
         className="2xl:px-20 md:px-10 2xl:mx-auto 2xl:container "
         style={{ background: "#062d60" }}
@@ -552,8 +594,8 @@ export default function Section() {
           <div className="flex flex-col items-center justify-center  mx-auto">
             <h3 className="lg:text-3xl md:text-2xl text-xl px-10 text-white font-bold  text-center lg:max-w-xl">
               {" "}
-              Join thousands of small business owners who trust Bench with their
-              books
+              With a wide base of happy customers you can join us and receive
+              our expert Accounting services
             </h3>
             <p className="text-base leading-normal text-center text-white mt-4 xl:w-1/2 w-10/12">
               {" "}
@@ -564,14 +606,13 @@ export default function Section() {
               statements for you to keep.
             </p>
             <div className="items-center  lg:justify-start sm:justify-start ">
-              <button class=" mt-8 text-blue-800 font-semibold bg-white border-0 py-2 px-8 focus:outline-none hover:bg-blue-800 hover:text-white rounded text-lg">
+              <button className=" mt-8 text-blue-800 font-semibold bg-white border-0 py-2 px-8 focus:outline-none hover:bg-blue-800 hover:text-white rounded text-lg">
                 Book A Demo
               </button>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   );
 }
