@@ -5,9 +5,11 @@ const people = [
     name: "Bookxpert-Technical Manager",
     title: "Guntur, Hyderabad, Bangalore",
     role: "Technical Manager",
-    link:"./code-ref/sub_careers",
+    link:"/Jobs",
   },
   // More people...
+
+  
 ];
 
 export default function Tables() {
@@ -16,10 +18,10 @@ export default function Tables() {
     <div className="max-w-2xl mx-auto px-6 py-10 lg:px-8">
       <div className="sm:flex sm:items-center text-center">
         <div className="sm:flex-auto">
-          <h2 className="text-3xl font-semibold text-gray-900">
+          <h1 className="PatuaOne tracking-wider text-3xl md:text-xl font-semibold text-gray-900">
             Let’s do big things
-          </h2>
-          <p className="mt-2 text-sm text-gray-700">
+          </h1>
+          <p className=" catamaran mt-2 text-sm text-gray-700">
             Whatever you do, wherever you’re at, we want to talk with you.
           </p>
         </div>
@@ -52,7 +54,7 @@ export default function Tables() {
                     scope="col"
                     className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
                   >
-                    <p href="#" className="group inline-flex">
+                    <p href="#" className="catamaran group inline-flex">
                       LOCATION
                       </p>
                   

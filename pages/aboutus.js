@@ -1,4 +1,5 @@
 import React from "react";
+import Stats from "./components/stats"
 
 export default function AboutUs() {
   return (
@@ -9,10 +10,10 @@ export default function AboutUs() {
       <div className="bg-repeat-x bg-center  bg-white pt-20">
         {/* ***************** SECTION ==> 1 **************** */}
         <div
-          className="text-black text-4xl font-bold text-center pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 items-center justify-center h-auto  bg-fixed bg-center bg-cover"
-          style={{ background: "#f1e3c7" }}
+          className="text-black text-2xl font-bold text-center pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols lg:grid-cols-3 xl:grid-cols-3 gap-5 items-center justify-center h-auto  bg-fixed bg-center bg-cover"
+          style={{ background: "#efe0c3" }}
         >
-          <div className=" mt-16 h-80 lg:mt-28 mx-auto">
+          <div className=" mt-16 h-80 lg:mt-28 md:hidden  lg:inline-block mx-auto">
             <img
               className="py-10 w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
               src="https://images.ctfassets.net/88a6qmzs2wdz/6o1A25XqFyywCwQKSsgGYw/13b6b935c32b48eacda0b036389510bd/Bench-Bookkeeping_About-L_copy.png?h=383&q=90&w=270"
@@ -20,15 +21,22 @@ export default function AboutUs() {
             />
           </div>
 
-          <div className="lg:mx-auto text-center text-black lg:flex-auto lg:py-32 pt-20 ">
-            <h2 className="text-xl font-bold tracking-tight  sm:text-4xl">
+          <div className=" lg:mx-auto  text-center text-black lg:flex-auto lg:py-32   pt-20 ">
+            <h1 className="PatuaOne tracking-wider text-2xl font-bold  md:text-2xl lg:text-4xl ">
               We help entrepreneurs master
-              <br />
+              <br className="hidden lg:block md:hidden" />
               their financial lives.
-            </h2>
+            </h1>
+          </div>
+          <div className="w-full lg:hidden lg:w-7/12 ">
+            <img
+              className="w-full h-full"
+              src="https://images.ctfassets.net/88a6qmzs2wdz/5ABL535tpCkwako2cuOSyO/70646f1e217199c9f88c20e71be459da/Yellow-Hero-Mobile.jpg?h=453&q=90&w=740"
+              alt="A group of People"
+            />
           </div>
 
-          <div className="mt-16 h-80 lg:mt-28 mx-auto">
+          <div className="mt-16 h-80 lg:mt-28 md:hidden  lg:inline-block  mx-auto">
             <img
               className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
               src="https://images.ctfassets.net/88a6qmzs2wdz/2xxROPFW36wUaSi8Ys6ym6/af4d19ad1363fe7a97231e83bad92118/Bench-Bookkeeping_About-R.png?h=376&q=90&w=270"
@@ -41,13 +49,14 @@ export default function AboutUs() {
 
         {/* ***************** SECTION ==> 2 **************** */}
         <div className=" items-center justify-center h-auto  bg-fixed bg-center bg-cover ">
-          <div class="flex COLOR py-20" style={{ background: "#f6f6f6" }}>
-            <div className=" mx-auto lg:flex-auto lg:py-20 text-center ">
-              <h2 className="text-xl lg:text-3xl p-10  font-bold text_color1">
-                Understanding your finances should be three things: simple,
+          <div class="flex py-20" style={{ background: "#f6f6f6" }}>
+            <div className="w-1/2 text-center mx-auto">
+            {/* mx-auto lg:flex-auto w-1/2 lg:py-20 text-center */}
+              <h1 className="PatuaOne tracking-wider text-xl lg:text-3xl p-10  font-bold text_color1">
+                Understanding your finances should be three things : simple,
                 effortless, and affordable.
-              </h2>
-              <p className="mt-8  text-lg lg:text-2xl px-14 leading-8 text_color2">
+              </h1>
+              <p className="catamaran mt-8  text-lg lg:text-xl px-14 leading-8 text_color2">
                 Bench simplifies small business finances. But our larger purpose
                 expands beyond that. We’re here to help entrepreneurs understand
                 what they want to do and where they want to go.
@@ -56,163 +65,85 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* ***************** SECTION ==> 3 **************** */}
-        <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
-          <div className="flex flex-col lg:flex-row justify-center gap-8">
-            <div className="w-full lg:w-5/12 flex flex-col justify-center px-5">
-              <h1 className="text-xl lg:text-4xl lg:text-left font-bold leading-9 pb-4 text_color1 ">
-                {" "}
-                What we do
-              </h1>
+      {/* ***************** SECTION ==> 3 **************** */}
+      <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
+        <div className="flex flex-col lg:flex-row justify-center gap-8">
+          <div className="heading w-full lg:w-5/12 flex flex-col justify-center">
+            <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left md:text-left text-center font-bold leading-9 text-gray-800  ">
+              {" "}
+              What we do
+            </h1>
 
-              <p className=" text-base lg:mr-20  lg:text-left text_color3  ">
-                {" "}
-                We take care of bookkeeping and tax for small business owners.
+            <p className="catamaran text-base lg:mr-20 text-center lg:text-left md:text-left text-gray-600  ">
+              {" "}
+              We take care of bookkeeping and tax for small business owners.
                 And we do it in a way that’s never been done before—by pairing
                 intuitive software with real, human bookkeepers. To us, it’s
                 more than number crunching. It's giving entrepreneurs more time
                 to focus on what they care about.
-              </p>
-            </div>
+            </p>
+           
+          </div>
 
-            <div className=" lg:w-5/12">
-              <img
-                className="h-full p-5"
-                src="https://images.ctfassets.net/88a6qmzs2wdz/3Uyb7jbHK8oS8EYImEOOuc/5b18cab4fb3bbfb75e002f72ae70c72a/Robson_Office_8447_1600px.jpg?h=380&q=90&w=570"
-                alt="A group of People"
-              />
-            </div>
-            {/* 
-<div className=" lg:w-5/12">
-          <img className="h-full"
-            src="https://images.ctfassets.net/88a6qmzs2wdz/60YZfXjE7UU0IqBarEgYK4/22461e400c9b393e8833046dd8fbeda6/2023_Homepage_VP_FinancialReporting.png?h=354&q=90&w=570"
+          <div className="lg:w-5/12">
+            <img
+              className="h-full md:mx-auto md:inline md:w-full"
+              src="https://images.ctfassets.net/88a6qmzs2wdz/3Uyb7jbHK8oS8EYImEOOuc/5b18cab4fb3bbfb75e002f72ae70c72a/Robson_Office_8447_1600px.jpg?h=380&q=90&w=570"  />
+          </div>
+        </div>
+      </div>
+
+       
+        {/* ***************** statistics **************** */}
+  <Stats/>
+  {/* ***************** SECTION ==> 5 **************** */}
+  <div className="flex  lg:flex-row flex-col justify-center md:py-12 md:px-6 gap-14 py-10  ">
+        <div className=" lg:w-5/12  ">
+          <img
+            className="h-full md:mx-auto"
+            src="https://images.ctfassets.net/88a6qmzs2wdz/1N6ndt2xLasq20cS8CWkSI/9ca649b656f8c2a0cf7c7372a6aeab4c/four-inside-one.jpg?h=888&q=70&w=1480"
             alt="A group of People"
           />
-        </div> */}
-          </div>
         </div>
+        <div className="w-full lg:w-5/12 flex flex-col md:leading-5 justify-center">
+          <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left md:text-left text-center font-bold  text-gray-800 ">
+            {" "}
+            How we got here
+          </h1>
 
-        {/* ***************** SECTION ==> 4 **************** */}
-
-        <div
-          className="text-gray-600 body-font"
-          style={{ background: "#f6f6f6" }}
-        >
-          <div class="2xl:container justify-center px-5  mx-auto">
-            <div class="flex flex-wrap lg:w-4/5 mx-auto -m-4 text-center">
-              <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
-                <div class=" px-4 py-6 rounded-lg">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokelinecap="round"
-                    strokelinejoin="round"
-                    strokewidth="2"
-                    class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-                  </svg>
-                  <h2 class="title-font font-medium text-3xl text-gray-900">
-                    1999
-                  </h2>
-                  <p class="leading-relaxed">Year we launched</p>
-                </div>
-              </div>
-              <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
-                <div class=" px-4 py-6 rounded-lg">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokelinecap="round"
-                    strokelinejoin="round"
-                    strokewidth="2"
-                    class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                    <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-                  </svg>
-                  <h2 class="title-font font-medium text-3xl text-gray-900">
-                    50 +
-                  </h2>
-                  <p class="leading-relaxed">Employees</p>
-                </div>
-              </div>
-              <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
-                <div class=" px-4 py-6 rounded-lg">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokelinecap="round"
-                    strokelinejoin="round"
-                    strokewidth="2"
-                    class="text-indigo-500 w-12 h-12 mb-3 inline-block"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M3 18v-6a9 9 0 0118 0v6"></path>
-                    <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
-                  </svg>
-                  <h2 class="title-font font-medium text-3xl text-gray-900">
-                    20 +
-                  </h2>
-                  <p class="leading-relaxed">Types of Businesses</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p className="catamaran font-medium text-base  lg:mr-20 lg:text-left para_text  ">
+              {" "}
+              2012: Accepted by TechStars NYC’s accelerator program as 10sheet
+              Inc.
+            </p>
+            <p className="catamaran font-medium text-base lg:mr-20  lg:text-left para_text  ">
+              {" "}
+              2012: Accepted by TechStars NYC’s accelerator program as 10sheet
+              Inc.
+            </p>
+            <p className="catamaran font-medium text-base lg:mr-20  lg:text-left para_text  ">
+              {" "}
+              2012: Accepted by TechStars NYC’s accelerator program as 10sheet
+              Inc.
+            </p>
+            <p className="catamaran font-medium text-base lg:mr-20 lg:text-left para_text  ">
+              {" "}
+              2012: Accepted by TechStars NYC’s accelerator program as 10sheet
+              Inc.
+            </p>
+            <p className="catamaran font-medium text-base lg:mr-20 lg:text-left para_text  ">
+              {" "}
+              2012: Accepted by TechStars NYC’s accelerator program as 10sheet
+              Inc.
+            </p>
         </div>
-
-        {/* ***************** SECTION ==> 5 **************** */}
-        <div className="flex  lg:flex-row flex-col justify-center gap-8  p-10  ">
-          <div className=" lg:w-5/12 ">
-            <img
-              className="h-full"
-              src="https://images.ctfassets.net/88a6qmzs2wdz/6i5t90xcqiIUMW5oX5fqcP/b8452255e4ce062957732537a283fe8b/2023_Homepage_VP_ExpertSupport.png?h=354&q=90&w=570"
-              alt="A group of People"
-            />
-          </div>
-          <div className="w-full lg:w-5/12 flex flex-col ">
-            <h1 className="text-xl lg:text-4xl font-bold  text-gray-800 ">
-              {" "}
-              How we got here
-            </h1>
-
-            <p className="font-medium text-base lg:mr-20 lg:text-left para_text  ">
-              {" "}
-              2012: Accepted by TechStars NYC’s accelerator program as 10sheet
-              Inc.
-            </p>
-            <p className="font-medium text-base lg:mr-20  lg:text-left para_text  ">
-              {" "}
-              2012: Accepted by TechStars NYC’s accelerator program as 10sheet
-              Inc.
-            </p>
-            <p className="font-medium text-base lg:mr-20  lg:text-left para_text  ">
-              {" "}
-              2012: Accepted by TechStars NYC’s accelerator program as 10sheet
-              Inc.
-            </p>
-            <p className="font-medium text-base lg:mr-20 lg:text-left para_text  ">
-              {" "}
-              2012: Accepted by TechStars NYC’s accelerator program as 10sheet
-              Inc.
-            </p>
-            <p className="font-medium text-base lg:mr-20 lg:text-left para_text  ">
-              {" "}
-              2012: Accepted by TechStars NYC’s accelerator program as 10sheet
-              Inc.
-            </p>
-          </div>
-        </div>
+      </div>
 
         <div>
           <div className="text-center">
             <div className="pb-20">
               <div className="text-center">
-                <p>
+                <p className="catamaran">
                   We acknowledge that Bench headquarters is located on the
                   traditional, ancestral, and unceded territory of the Coast{" "}
                   <br /> Salish Peoples, including the territories of the
@@ -234,32 +165,32 @@ export default function AboutUs() {
         style={{ background: "#f6f6f6" }}
       >
         <div>
-          <h2 className=" lg:text-3xl text-center font-bold text-lg  lg:p-8 p-8 py-5">
+          <h1 className="PatuaOne tracking-wider  lg:text-3xl md:text-xl text-center font-bold text-lg  lg:p-8 p-8 py-5">
             Want to learn more about Bench?{" "}
-          </h2>
+          </h1>
 
-          <p className="text-center mx-auto w-1/3">
+          <p className="catamaran text-center mx-auto w-1/3 md:w-full md:px-16">
             From new roles at our HQ to our name in the news, there's always
             something happening around here. See what's new.
           </p>
         </div>
 
-        <div class=" font-medium lg:w-4/5 lg:mx-auto lg:p-10 p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 ">
-          <div class=" md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
-            <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
+        <div class=" font-medium lg:w-4/5 md:w-2/5 md:mx-auto lg:mx-auto lg:p-10 p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols lg:grid-cols-3 xl:grid-cols-3 gap-5 ">
+          <div class="dark:border-gray-700 dark:bg-gray-800 ">
+            <div className="w-x h-x  lg:w-x2 lg:h-y2"></div>
             {/* <img class="w-full" src="" alt="Mountain"/> */}
 
             <div class=" py-4">
-              <div class="h-full  overflow-hidden">
+              <div class="h-full md:h-auto  overflow-hidden">
                 <img
-                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  class="lg:h-48 h-auto w-full object-cover object-center"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/37tbb4S14cSKQSgMOAwGye/39cd38419e7438f358c5aa0b32eb1136/Bench-Bookkeeping_Careers.jpg?h=206&q=90&w=330"
                   alt="blog"
                 />
                 <div class="p-6">
-                  <h2 class="text_color tracking-widest text-center mx-auto text-md title-font font-medium text-gray-400 mb-1">
+                  <h1 class="PatuaOne tracking-wider text_color text-center mx-auto text-md title-font font-medium text-gray-400 mb-1">
                     Careers
-                  </h2>
+                  </h1>
 
                   {/* <div class="flex items-center flex-wrap ">
                     <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -324,9 +255,9 @@ export default function AboutUs() {
                   alt="blog"
                 />
                 <div class="p-6">
-                  <h2 class="text_color tracking-widest text-center mx-auto text-md title-font font-medium text-gray-400 mb-1">
+                  <h1 class=" PatuaOne tracking-wider text_color text-center mx-auto text-md title-font font-medium text-gray-400 mb-1">
                     Press
-                  </h2>
+                  </h1>
                 </div>
               </div>
             </div>
@@ -344,9 +275,9 @@ export default function AboutUs() {
                   alt="blog"
                 />
                 <div class="p-6">
-                  <h2 class="text_color tracking-widest text-center mx-auto text-md title-font font-medium text-gray-400 mb-1">
+                  <h1 class=" PatuaOne tracking-wider text_color text-center mx-auto text-md title-font font-medium text-gray-400 mb-1">
                     How it Works
-                  </h2>
+                  </h1>
                 </div>
               </div>
             </div>

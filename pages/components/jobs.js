@@ -1,45 +1,9 @@
 import React from "react";
 
-import Navbar from "./spl_nav";
-import Footer from "./footer";
+import Navbar from "./code-ref/spl_nav";
+import Footer from "./code-ref/footer";
 
-// import {
-//     ArrowPathIcon,
-//     Bars3Icon,
-//     BookmarkSquareIcon,
-//     CalendarIcon,
-//     ChartBarIcon,
-//     CursorArrowRaysIcon,
-//     LifebuoyIcon,
-//     PhoneIcon,
-//     PlayIcon,
-//     ShieldCheckIcon,
-//     Squares2X2Icon,
-//     XMarkIcon,
-//     AiOutlineHome,
-//     HomeIcon,
-//     BellIcon,
-//   } from '@heroicons/react/24/outline'
-
-// const solutions = [
-//     {
-//       name: 'Set Alert',
-//       description: 'Get a better understanding of where your traffic is coming from.',
-//       href: '#',
-//       icon: BellIcon,
-
-//     },
-// {
-//   name: 'About Us',
-//   description: 'Speak directly to your customers in a more meaningful way.',
-//   href: '#',
-//   icon: CursorArrowRaysIcon,
-// },
-// { name: 'Careers', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
-
-//]
-
-export default function Sub_careers() {
+export default function Jobs() {
   return (
     <>
       <Navbar />
