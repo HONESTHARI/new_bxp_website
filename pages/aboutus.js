@@ -10,7 +10,7 @@ export default function AboutUs() {
       <div className="bg-repeat-x bg-center  bg-white pt-20">
         {/* ***************** SECTION ==> 1 **************** */}
         <div
-          className="text-black text-2xl font-bold text-center pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols lg:grid-cols-3 xl:grid-cols-3 gap-5 items-center justify-center h-auto  bg-fixed bg-center bg-cover"
+          className="text-black text-2xl font-medium text-center pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols lg:grid-cols-3 xl:grid-cols-3 gap-5 items-center justify-center h-auto  bg-fixed bg-center bg-cover"
           style={{ background: "#efe0c3" }}
         >
           <div className=" mt-16 h-80 lg:mt-28 md:hidden  lg:inline-block mx-auto">
@@ -22,7 +22,7 @@ export default function AboutUs() {
           </div>
 
           <div className=" lg:mx-auto  text-center text-black lg:flex-auto lg:py-32   pt-20 ">
-            <h1 className="PatuaOne tracking-wider text-2xl font-bold  md:text-2xl lg:text-4xl ">
+            <h1 className="PatuaOne tracking-wider w-full text-2xl font-medium  md:text-2xl lg:text-3xl ">
               We help entrepreneurs master
               <br className="hidden lg:block md:hidden" />
               their financial lives.
@@ -50,13 +50,13 @@ export default function AboutUs() {
         {/* ***************** SECTION ==> 2 **************** */}
         <div className=" items-center justify-center h-auto  bg-fixed bg-center bg-cover ">
           <div class="flex py-20" style={{ background: "#f6f6f6" }}>
-            <div className="w-1/2 text-center mx-auto">
+            <div className="w-full lg:w-1/2 text-center mx-auto">
             {/* mx-auto lg:flex-auto w-1/2 lg:py-20 text-center */}
-              <h1 className="PatuaOne tracking-wider text-xl lg:text-3xl p-10  font-bold text_color1">
+              <h1 className="PatuaOne tracking-wider text-xl lg:text-3xl p-8  font-medium text_color1">
                 Understanding your finances should be three things : simple,
                 effortless, and affordable.
               </h1>
-              <p className="catamaran mt-8  text-lg lg:text-xl px-14 leading-8 text_color2">
+              <p className="catamaran mt-8 font-normal text-lg lg:text-xl px-14 leading-8 text_color2">
                 Bench simplifies small business finances. But our larger purpose
                 expands beyond that. We’re here to help entrepreneurs understand
                 what they want to do and where they want to go.
@@ -65,16 +65,15 @@ export default function AboutUs() {
           </div>
         </div>
 
-      {/* ***************** SECTION ==> 3 **************** */}
+      {/* ***************** What We Do ==> 3 **************** */}
       <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
         <div className="flex flex-col lg:flex-row justify-center gap-8">
           <div className="heading w-full lg:w-5/12 flex flex-col justify-center">
-            <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left md:text-left text-center font-bold leading-9 text-gray-800  ">
-              {" "}
-              What we do
-            </h1>
-
-            <p className="catamaran text-base lg:mr-20 text-center lg:text-left md:text-left text-gray-600  ">
+            <h1 className=" PatuaOne tracking-wider text-xl lg:text-2xl lg:text-left text-center font-medium py-5 leading-9 text-gray-800 ">
+            {" "}
+            What we do
+          </h1>  
+            <p className="catamaran font-normal text-base lg:mr-20 text-center lg:text-left md:text-left  ">
               {" "}
               We take care of bookkeeping and tax for small business owners.
                 And we do it in a way that’s never been done before—by pairing
@@ -96,7 +95,7 @@ export default function AboutUs() {
        
         {/* ***************** statistics **************** */}
   <Stats/>
-  {/* ***************** SECTION ==> 5 **************** */}
+  {/* ***************** How We Got Here ==> 5 **************** */}
   <div className="flex  lg:flex-row flex-col justify-center md:py-12 md:px-6 gap-14 py-10  ">
         <div className=" lg:w-5/12  ">
           <img
@@ -106,32 +105,36 @@ export default function AboutUs() {
           />
         </div>
         <div className="w-full lg:w-5/12 flex flex-col md:leading-5 justify-center">
-          <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left md:text-left text-center font-bold  text-gray-800 ">
+          {/* <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left md:text-left text-center font-medium  text-gray-800 ">
             {" "}
             How we got here
-          </h1>
+          </h1> */}
+          <h1 className=" PatuaOne tracking-wider text-xl lg:text-2xl lg:text-left text-center font-medium py-5 leading-9 text-gray-800 ">
+            {" "}
+            How we got here
+          </h1>     
 
-          <p className="catamaran font-medium text-base  lg:mr-20 lg:text-left para_text  ">
+          <p className="catamaran font-normal text-base  lg:mr-20 lg:text-left">
               {" "}
               2012: Accepted by TechStars NYC’s accelerator program as 10sheet
               Inc.
             </p>
-            <p className="catamaran font-medium text-base lg:mr-20  lg:text-left para_text  ">
+            <p className="catamaran font-normal text-base lg:mr-20  lg:text-left">
               {" "}
               2012: Accepted by TechStars NYC’s accelerator program as 10sheet
               Inc.
             </p>
-            <p className="catamaran font-medium text-base lg:mr-20  lg:text-left para_text  ">
+            <p className="catamaran font-normal text-base lg:mr-20  lg:text-left">
               {" "}
               2012: Accepted by TechStars NYC’s accelerator program as 10sheet
               Inc.
             </p>
-            <p className="catamaran font-medium text-base lg:mr-20 lg:text-left para_text  ">
+            <p className="catamaran font-normal text-base lg:mr-20 lg:text-left">
               {" "}
               2012: Accepted by TechStars NYC’s accelerator program as 10sheet
               Inc.
             </p>
-            <p className="catamaran font-medium text-base lg:mr-20 lg:text-left para_text  ">
+            <p className="catamaran font-normal text-base lg:mr-20 lg:text-left">
               {" "}
               2012: Accepted by TechStars NYC’s accelerator program as 10sheet
               Inc.
@@ -143,7 +146,7 @@ export default function AboutUs() {
           <div className="text-center">
             <div className="pb-20">
               <div className="text-center">
-                <p className="catamaran">
+                <p className="catamaran font-normal">
                   We acknowledge that Bench headquarters is located on the
                   traditional, ancestral, and unceded territory of the Coast{" "}
                   <br /> Salish Peoples, including the territories of the
@@ -165,11 +168,11 @@ export default function AboutUs() {
         style={{ background: "#f6f6f6" }}
       >
         <div>
-          <h1 className="PatuaOne tracking-wider  lg:text-3xl md:text-xl text-center font-bold text-lg  lg:p-8 p-8 py-5">
+          <h1 className="PatuaOne tracking-wider  lg:text-3xl md:text-xl text-center font-medium text-lg  lg:p-8 p-8 py-5">
             Want to learn more about Bench?{" "}
           </h1>
 
-          <p className="catamaran text-center mx-auto w-1/3 md:w-full md:px-16">
+          <p className="catamaran text-center font-normal mx-auto w-1/3 md:w-full md:px-16">
             From new roles at our HQ to our name in the news, there's always
             something happening around here. See what's new.
           </p>

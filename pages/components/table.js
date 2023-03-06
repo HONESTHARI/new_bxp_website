@@ -5,7 +5,7 @@ const people = [
     name: "Bookxpert-Technical Manager",
     title: "Guntur, Hyderabad, Bangalore",
     role: "Technical Manager",
-    link:"/Jobs",
+    link:"/jobs",
   },
   // More people...
 
@@ -21,7 +21,7 @@ export default function Tables() {
           <h1 className="PatuaOne tracking-wider text-3xl md:text-xl font-semibold text-gray-900">
             Let’s do big things
           </h1>
-          <p className=" catamaran mt-2 text-sm text-gray-700">
+          <p className=" catamaran font-medium mt-2 text-sm text-gray-700">
             Whatever you do, wherever you’re at, we want to talk with you.
           </p>
         </div>
@@ -40,43 +40,24 @@ export default function Tables() {
             <table className="min-w-full divide-y divide-gray-300">
               <thead>
                 <tr>
-                  <th
-                    scope="col"
-                    className="py-3.5 pl-6 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0"
-                  > 
+                  <th scope="col" className="PatuaOne font-medium py-3.5 pl-6 pr-3 text-left text-sm  text-gray-900 sm:pl-0"> 
                     POSITION
                       <span  href="./code-ref/sub_careers"className="invisible ml-2 flex-none rounded text-gray-400 group-hover:visible group-focus:visible">
                         {/* <ChevronDownIcon className="h-5 w-5" aria-hidden="true" /> */}
                       </span>
-                  
                   </th>
-                  <th
-                    scope="col"
-                    className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
-                  >
+                  <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900" >
                     <p href="#" className="catamaran group inline-flex">
                       LOCATION
                       </p>
-                  
                   </th>
-                  <th
-                    scope="col"
-                    className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
-                  >
+                  <th scope="col"  className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900" >
                     <span href="#" className="group inline-flex">
                       TEAM
                       <span className="invisible ml-2 flex-none rounded text-gray-400 group-hover:visible group-focus:visible">
-                        {/* <ChevronDownIcon
-                          className="invisible ml-2 h-5 w-5 flex-none rounded text-gray-400 group-hover:visible group-focus:visible"
-                          aria-hidden="true"
-                        /> */}
                       </span>
                     </span>
                   </th>
-
-                  {/* <th scope="col" className="relative py-3.5 pl-3 pr-0">
-                    <span className="sr-only">Edit</span>
-                  </th> */}
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 bg-white">
@@ -87,28 +68,12 @@ export default function Tables() {
                       {person.name}
                       </a>
                     </td>
-                  
-                   
-                    
                     <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                      
                       {person.title}
                     </td>
-                    
-                    {/* <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                      {person.email}
-                    </td> */}
                     <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                       {person.role}
                     </td>
-                    {/* <td className="relative whitespace-nowrap py-4 pl-3 pr-6 text-right text-sm sm:pr-0">
-                      <a
-                        href="#"
-                        className="text-indigo-600 hover:text-indigo-900"
-                      >
-                        Edit<span className="sr-only">, {person.name}</span>
-                      </a>
-                    </td> */}
                   </tr>
                 ))}
               </tbody>

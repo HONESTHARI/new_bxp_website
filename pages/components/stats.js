@@ -12,7 +12,7 @@ const stats = [
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center">
-              <h1 className="PatuaOne tracking-wider text-3xl font-bold  text-gray-900 sm:text-4xl">
+              <h1 className="PatuaOne tracking-wider text-3xl font-medium  text-gray-900 sm:text-4xl">
                 Trusted by creators worldwide
               </h1>
               <p className="catamaran mt-4 text-lg leading-8 text-gray-600 font-medium">

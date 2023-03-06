@@ -32,7 +32,10 @@ const logos = [
 export default function Home() {
   return (
     <div className="pt-20 items-center justify-center h-auto bg-white  bg-fixed bg-center bg-cover ">
-      {/* ***************** SECTION ==> 1 **************** */}
+     
+     
+      {/* ***************** Run Your Business ==> 1 **************** */}
+      
       <div className="xl:container 2xl:mx-auto  py-24 lg:py-24 lg:px-20 md:py-20 md:px-6  px-4 text-white"
         style={{ background: "#062d60" }}
       >
@@ -44,17 +47,16 @@ export default function Home() {
               <br className="hidden lg:block md:hidden" /> While we do
               <br className="hidden lg:block md:hidden" /> The accounting.
             </h1>
-            <p className="catamaran text-base leading-6 text-center lg:text-left  text-white">
+            <p className="catamaran  font-normal leading-6 text-center lg:text-left   text-white">
               Experience Efficient Accounting and Returns Preparation along with
               Customized MIS Reports for Decision Making with Bookxpert,your
               virtual real-time Accounting partner thereby giving you enough
               Time to Focus on your Core Tasks.
             </p>
-            <button className="lg:w-1/3 block  lg:inline-block sm:w-1/4 sm:text-center m-auto lg:ml-0 my-5 hover:bg-white text-white font-semibold hover:text-blue-800 py-2 px-4 border border-white hover:border-transparent rounded">
-              Book A Demo
-            </button>
+            <button className="my-5 p-0 px-3 bg-transparent items-center mx-auto text-white border  border-white hover:bg-white font-medium  hover:text-blue-800 hover:border-transparent rounded">
+            Book A Demo
+          </button>
           </div>
-
           <div className="w-full lg:w-7/12 ">
             <img
               className="w-full h-full"
@@ -64,23 +66,20 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* ***************** SECTION ==> 2 **************** */}
+      {/* ***************** Are You Ready ==> 2 **************** */}
       <div className="grid grid-cols-1 sm:grid-cols-1  py-24 lg:grid-cols-3 xl:grid-cols-3  text-white   items-center justify-center"
         style={{ background: "#f7f8fa" }}
       >
         <div className="hidden lg:block   mx-auto">
-          <img
-            className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+          <img className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             src="https://images.ctfassets.net/88a6qmzs2wdz/1dLJZFfakIm6ze6ySJAzRS/19329d5a2f956af08c6ec75c15fdf218/TaxHub-Left.png?h=236&q=90&w=170"
             alt="App screenshot"
             width={1920}
-            height={1080}
-          />
+            height={1080} />
         </div>
 
         <div className=" text-center text-black ">
-          <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl font-bold sm:text-4xl md:text-xl">
+          <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl font-medium sm:text-4xl md:text-xl">
             Are you ready for tax season?
           </h1>
           <p className=" catamaran my-3 text-sm lg:w-full text-black leading-5 px-10 font-medium">
@@ -88,9 +87,10 @@ export default function Home() {
             in our Tax Resource Hub.
           </p>
 
-          <button className=" my-5 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+          <button className="my-5 py-2 px-3 bg-transparent hover:bg-blue-900 text-blue-900 font-medium text-base hover:text-white  border border-blue-900 hover:border-transparent rounded">
             Book A Demo
           </button>
+
 
           <p className="catamaran my-3 text-sm lg:w-full  text-black leading-5 px-10 font-medium">
             If you're several years behind on business taxes, get caught up and
@@ -112,7 +112,7 @@ export default function Home() {
       {/* ***************** Review  **************** */}
       <div className="max-w-none py-24 items-center justify-center h-auto  bg-white bg-fixed bg-center bg-cover ">
         <div>
-          <h1 className="PatuaOne tracking-wider lg:text-3xl text-center font-bold text-lg  lg:p-8 p-8 py-3">
+          <h1 className="PatuaOne tracking-wider lg:text-3xl text-center font-medium lg:p-8 p-8 py-3">
             We are on a journey to simplify accounting & bookkeeping for MSMEs &
             Auditors.
           </h1>
@@ -209,28 +209,22 @@ export default function Home() {
             alt="A group of People"
           />
         </div>
-        <div className="w-full lg:w-4/12 flex flex-col justify-center">
-          <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-bold py-5 leading-9 text-gray-800 ">
+        <div className="w-full lg:w-5/12 flex flex-col justify-center">
+          <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-medium py-5 leading-9 text-gray-800 ">
             {" "}
             No Delays , On - Time Reports
           </h1>
 
-          <p className=" catamaran px-10 lg:px-0 font-normal text-base lg:mr-20 text-center lg:text-left para_text  ">
+          <p className=" catamaran px-10 lg:px-0 font-normal text-base lg:mr-20 text-center lg:text-left">
             {" "}
             Gain access to accurate financial reports and documents, through our
             owner ‘s app. Our financial reports will provide you with the
             information you need, including updated financial statements &
             one-on-one account managers for all of your needs.
           </p>
-          <button className="my-5 w-1/2 lg:w-1/3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+          <button className="my-5 py-2 px-3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-900 text-blue-700 font-medium hover:text-white border border-blue-900 hover:border-transparent rounded">
             Book A Demo
           </button>
-
-          {/* <div className="items-center  lg:justify-start">
-            <button class=" mt-16 text-white bg-blue-900 border-0 py-2 px-8 focus:outline-none hover:bg-green-800 hover:text-white rounded text-lg">
-              Book A Demo
-            </button>
-          </div> */}
         </div>
       </div>
 
@@ -238,19 +232,19 @@ export default function Home() {
       <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
         <div className="flex flex-col lg:flex-row justify-center gap-8">
           <div className="heading w-full lg:w-5/12 flex flex-col justify-center">
-            <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-bold py-5 leading-9 text-gray-800 ">
+            <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-medium py-5 leading-9 text-gray-800 ">
               {" "}
               Relief from Departmental Levies
             </h1>
 
-            <p className="catamaran font-catamaran text-base lg:mr-20 text-center lg:text-left para_text  ">
+            <p className="catamaran  text-base lg:mr-20 text-center lg:text-left">
               {" "}
               Delivery of monthly financial reports in advance helps with smooth
               and perfect filing thereby helping businesses getting relief from
               unnecessary departmental Levies like Fines, Penalties,Late Fees
               etc.
             </p>
-            <button className="my-5 w-1/2 lg:w-1/3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            <button className="my-5 py-2 px-3  mx-auto bg-transparent lg:ml-0  hover:bg-blue-900 text-blue-700 font-medium hover:text-white  border border-blue-900 hover:border-transparent rounded">
               Book A Demo
             </button>
           </div>
@@ -262,13 +256,6 @@ export default function Home() {
               alt="A group of People"
             />
           </div>
-          {/* 
-<div className=" lg:w-5/12">
-          <img className="h-full"
-            src="https://images.ctfassets.net/88a6qmzs2wdz/60YZfXjE7UU0IqBarEgYK4/22461e400c9b393e8833046dd8fbeda6/2023_Homepage_VP_FinancialReporting.png?h=354&q=90&w=570"
-            alt="A group of People"
-          />
-        </div> */}
         </div>
       </div>
 
@@ -281,36 +268,36 @@ export default function Home() {
             alt="A group of People"
           />
         </div>
-        <div className="w-full lg:w-4/12 flex flex-col justify-center">
-          <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-bold py-5 leading-9 text-gray-800 ">
+        <div className="w-full lg:w-5/12 flex flex-col justify-center">
+          <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-medium py-5 leading-9 text-gray-800 ">
             {" "}
             Assisting Auditors
           </h1>
 
-          <p className=" catamaran font-medium text-base lg:mr-20 text-center lg:text-left para_text  ">
+          <p className=" catamaran font-medium text-base lg:mr-20 text-center lg:text-left ">
             {" "}
             We will provide Data in Reusable Formats along with supporting
             documents within Deadlines for Attestation & Filing Returns.
           </p>
-          <button className="my-5 w-1/2 lg:w-1/3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+          <button className="my-5 py-2 px-3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-900 text-blue-700 font-medium hover:text-white  border border-blue-900 hover:border-transparent rounded">
             Book A Demo
           </button>
         </div>
       </div>
-      {/* ***************** SECTION ==> 8 **************** */}
+      {/* *****************  Expert’s Analysis ==> 8 **************** */}
       <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
         <div className="flex flex-col lg:flex-row justify-center gap-8">
           <div className="w-full lg:w-5/12 flex flex-col justify-center">
-            <h1 className="PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-bold py-5 leading-9 text-gray-800 ">
+            <h1 className="PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-medium py-5 leading-9 text-gray-800 ">
               {" "}
               Expert’s Analysis
             </h1>
-            <p className="catamaran text-base lg:mr-20 text-center lg:text-left para_text ">
+            <p className="catamaran text-base lg:mr-20 text-center lg:text-left">
               {" "}
               Our expert's analysis reports will help you in Planning of your
               Stocks, Materials Required, Credit Flows etc.
             </p>
-            <button className="my-5 w-1/2 lg:w-1/3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            <button className="my-5 py-2 px-3  mx-auto bg-transparent lg:ml-0  hover:bg-blue-900 text-blue-700 font-medium hover:text-white  border border-blue-900 hover:border-transparent rounded">
               Book A Demo
             </button>
           </div>
@@ -322,20 +309,13 @@ export default function Home() {
               alt="A group of People"
             />
           </div>
-          {/* 
-<div className=" lg:w-5/12">
-          <img className="h-full"
-            src="https://images.ctfassets.net/88a6qmzs2wdz/60YZfXjE7UU0IqBarEgYK4/22461e400c9b393e8833046dd8fbeda6/2023_Homepage_VP_FinancialReporting.png?h=354&q=90&w=570"
-            alt="A group of People"
-          />
-        </div> */}
         </div>
       </div>
-      {/* ***************** SECTION ==> 9 **************** */}
+      {/* ***************** Explore over ==> 9 **************** */}
 
       <div className="max-w-none mb-10 pt-10 items-center justify-center h-auto bg-white bg-fixed bg-center bg-cover ">
         <div>
-          <h1 className="PatuaOne tracking-wider lg:text-3xl text-center font-bold text-lg  lg:p-8 p-8 py-5">
+          <h1 className="PatuaOne tracking-wider lg:text-3xl text-center font-medium text-lg  lg:p-8 p-8 py-5">
             Explore over 600 resources for managing small business finances
           </h1>
         </div>
@@ -350,9 +330,9 @@ export default function Home() {
                   alt="blog"
                 />
                 <div className="p-6">
-                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                  <h1 className ="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
-                  </h2>
+                  </h1>
                   <h1 className=" PatuaOne tracking-wider title-font text-lg font-medium text-gray-900 mb-3">
                     The Catalyzer
                   </h1>
@@ -393,7 +373,7 @@ export default function Home() {
                     </span>
                     <span className="text-gray-400 inline-flex items-center leading-none text-sm">
                       <svg
-                        class="w-4 h-4 mr-1"
+                        className="w-4 h-4 mr-1"
                         stroke="currentColor"
                         stroke-width="2"
                         fill="none"
@@ -423,9 +403,9 @@ export default function Home() {
                   alt="blog"
                 />
                 <div className="p-6">
-                  <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                  <h1 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
-                  </h2>
+                  </h1>
                   <h1 className="PatuaOne tracking-wider title-font text-lg font-medium text-gray-900 mb-3">
                     The Catalyzer
                   </h1>
@@ -496,9 +476,9 @@ export default function Home() {
                   alt="blog"
                 />
                 <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                  <h1 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
-                  </h2>
+                  </h1>
                   <h1 className="PatuaOne tracking-wider title-font text-lg font-medium text-gray-900 mb-3">
                     The Catalyzer
                   </h1>
@@ -559,20 +539,62 @@ export default function Home() {
         </div>
 
         <div className="text-center  ">
-          <button className="  mx-auto bg-transparent lg:ml-0 hover:bg-blue-900 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+          <button className="mx-auto py-2 px-3 bg-transparent lg:ml-0 hover:bg-blue-900 text-blue-700 font-medium hover:text-white  border border-blue-500 hover:border-transparent rounded">
             Book A Demo
           </button>
         </div>
       </div>
 
-      {/* ***************** SECTION ==> 10 **************** */}
+      {/* ***************** Accordion ==> 10 **************** */}
       {/* <Accordion/> */}
 
-      {/* ***************** SECTION ==> 11 **************** */}
-      <div
-        className="2xl:px-20 md:px-10 2xl:mx-auto 2xl:container "
-        style={{ background: "#062d60" }}
-      >
+
+
+ {/* ***************** With A Wide ==> 2 **************** */}
+ <div className="grid grid-cols-1 sm:grid-cols-1 py-10 lg:grid-cols-3 xl:grid-cols-3 items-center justify-center"
+        style={{ background: "#062d60" }} >
+       
+        <div className="hidden lg:block mx-auto ">
+          <img className="w-[10rem] max-w-none rounded-md"
+            src="https://images.ctfassets.net/88a6qmzs2wdz/2e2TsIsGLaRNV65XbCPjNo/38bdefa478997663bad0f94e1be40529/Artboard_Copy.png?h=345&q=90&w=170"
+            alt="App screenshot"
+            width={1920}
+            height={1080} />
+        </div>
+
+        <div className="text-center ">
+          <h1 className="PatuaOne tracking-wider text-3xl text-white lg:text-3xl font-medium sm:text-4xl md:text-xl">
+          With A Wide Base Of Happy Customers You Can Join Us And Receive Our Expert Accounting Services
+          </h1>
+          <p className=" catamaran my-3 text-sm lg:w-full text-white leading-5 px-10 font-medium">
+            Get exclusive access to deadline reminders, free checklists and more
+            in our Tax Resource Hub.
+          </p>
+
+          <button className="my-5 py-2 px-3 bg-transparent items-center mx-auto text-white border  border-white hover:bg-white font-medium hover:text-blue-800 hover:border-transparent rounded">
+            Book A Demo
+          </button>
+
+        </div>
+
+        <div className="hidden lg:block mx-auto  ">
+          <img
+            className=" w-[10rem] max-w-none rounded-md"
+            src="https://images.ctfassets.net/88a6qmzs2wdz/5BGb5uU22ZJAh7y63UZDvH/4109e19e0f4ba46d442ff27ed5c8fa2f/Artboard.png?h=345&q=90&w=170"
+            alt="App screenshot"
+            width={1920}
+            height={1080}
+          />
+        </div>
+      </div>
+
+
+
+
+
+      {/* ***************** With a wide base ==> 11 **************** */}
+      {/* <div className="2xl:px-20 md:px-10 2xl:mx-auto 2xl:container "
+        style={{ background: "#062d60" }} >
         <div className="md:py-12 py-8 ">
           <div className="flex flex-col items-center justify-center  mx-auto">
             <h1 className="PatuaOne tracking-wider lg:text-3xl md:text-2xl text-xl 
@@ -590,13 +612,15 @@ export default function Home() {
               statements for you to keep.
             </p>
             <div className="items-center  lg:justify-start sm:justify-start ">
-              <button className=" mt-8 text-blue-800 font-semibold bg-white border-0 py-2 px-8 focus:outline-none hover:bg-blue-800 hover:text-white rounded text-lg">
-                Book A Demo
-              </button>
+             
+
+              <button className="my-5 py-2 px-3 bg-transparent items-center mx-auto text-white border  border-white hover:bg-white font-medium hover:text-blue-800 hover:border-transparent rounded">
+            Book A Demo
+          </button>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
