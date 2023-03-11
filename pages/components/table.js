@@ -1,11 +1,11 @@
 //import { ChevronDownIcon } from '@heroicons/react/20/solid'
-
+// import Jobs from "./jobs";
 const people = [
   {
     name: "Bookxpert-Technical Manager",
     title: "Guntur, Hyderabad, Bangalore",
     role: "Technical Manager",
-    link:"/jobs",
+    link:"./Jobs",
   },
   // More people...
 

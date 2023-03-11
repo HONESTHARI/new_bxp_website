@@ -1,6 +1,6 @@
 import React from "react";
-import Stats from "./components/stats"
-
+import Stats from "./components/stats";
+import Calendar from './components/code-ref/calendar'
 
 const logos = [
   {
@@ -32,15 +32,13 @@ const logos = [
 export default function Home() {
   return (
     <div className="pt-20 items-center justify-center h-auto bg-white  bg-fixed bg-center bg-cover ">
-     
-     
+
       {/* ***************** Run Your Business ==> 1 **************** */}
-      
       <div className="xl:container 2xl:mx-auto  py-24 lg:py-24 lg:px-20 md:py-20 md:px-6  px-4 text-white"
         style={{ background: "#062d60" }}
       >
         <div className="flex flex-col lg:flex-row justify-center px-8 ">
-          <div className="w-full leading-10 lg:w-5/12 lg:ml-16 pb-16 lg:text-left   ">
+          <div className="w-full leading-10 lg:w-5/12 lg:ml-16 pb-16 lg:text-left  text-center ">
             <h1 className="PatuaOne tracking-wider pb-5 text-2xl lg:text-5xl md:text-2xl md:pb-5  md:max-w-xs lg:max-w-lg text-center  md:text-center lg:text-left md:mx-auto text-white font-medium lg:pb-8  ">
               {" "}
               Run your business,
@@ -53,9 +51,9 @@ export default function Home() {
               virtual real-time Accounting partner thereby giving you enough
               Time to Focus on your Core Tasks.
             </p>
-            <button className="my-5 p-0 px-3 bg-transparent items-center mx-auto text-white border  border-white hover:bg-white font-medium  hover:text-blue-800 hover:border-transparent rounded">
-            Book A Demo
-          </button>
+            <button className="my-5 p-0 hover:rounded-bl-2xl hover:rounded-tr-2xl   px-3 bg-transparent items-center mx-auto text-white border  border-white hover:bg-white font-medium  hover:text-blue-800 hover:border-transparent rounded">
+              Book A Demo
+            </button>
           </div>
           <div className="w-full lg:w-7/12 ">
             <img
@@ -66,16 +64,27 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+
+
+{/* ***********Calender Testing ********************************** */}
+<Calendar/>
+
+
+
+
       {/* ***************** Are You Ready ==> 2 **************** */}
       <div className="grid grid-cols-1 sm:grid-cols-1  py-24 lg:grid-cols-3 xl:grid-cols-3  text-white   items-center justify-center"
         style={{ background: "#f7f8fa" }}
       >
         <div className="hidden lg:block   mx-auto">
-          <img className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+          <img
+            className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             src="https://images.ctfassets.net/88a6qmzs2wdz/1dLJZFfakIm6ze6ySJAzRS/19329d5a2f956af08c6ec75c15fdf218/TaxHub-Left.png?h=236&q=90&w=170"
             alt="App screenshot"
             width={1920}
-            height={1080} />
+            height={1080}
+          />
         </div>
 
         <div className=" text-center text-black ">
@@ -87,10 +96,9 @@ export default function Home() {
             in our Tax Resource Hub.
           </p>
 
-          <button className="my-5 py-2 px-3 bg-transparent hover:bg-blue-900 text-blue-900 font-medium text-base hover:text-white  border border-blue-900 hover:border-transparent rounded">
+          <button className="my-5 py-2 px-3 hover:rounded-3xl bg-transparent hover:bg-blue-900 text-blue-900 font-medium text-base hover:text-white  border border-blue-900 hover:border-transparent rounded">
             Book A Demo
           </button>
-
 
           <p className="catamaran my-3 text-sm lg:w-full  text-black leading-5 px-10 font-medium">
             If you're several years behind on business taxes, get caught up and
@@ -109,8 +117,10 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ***************** Review  **************** */}
-      <div className="max-w-none py-24 items-center justify-center h-auto  bg-white bg-fixed bg-center bg-cover ">
+
+
+      {/* ***************** Review ==> 3 **************** */}
+      <div className="max-w-none py-20 items-center justify-center h-auto  bg-white bg-fixed bg-center bg-cover ">
         <div>
           <h1 className="PatuaOne tracking-wider lg:text-3xl text-center font-medium lg:p-8 p-8 py-3">
             We are on a journey to simplify accounting & bookkeeping for MSMEs &
@@ -193,16 +203,15 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ***************** SECTION ==> 4 **************** */}
-
+      {/* ***************** border ==> 4 **************** */}
       <div className="w-80 lg:w-3/4 md:w-4/5 mx-auto border border-gray-200 mb-10"></div>
 
-      {/* ***************** statistics **************** */}
+      {/* ***************** statistics ==>5 **************** */}
       <Stats />
 
-      {/* ***************** SECTION ==> 5 **************** */}
+      {/* ***************** Hero Sections-No Delays ==> 6 **************** */}
       <div className="flex  lg:flex-row flex-col-reverse justify-center md:py-12 md:px-6 gap-14 py-10  ">
-        <div className=" lg:w-5/12  ">
+        <div className=" lg:w-5/12">
           <img
             className="h-full md:mx-auto"
             src="https://images.ctfassets.net/88a6qmzs2wdz/6i5t90xcqiIUMW5oX5fqcP/b8452255e4ce062957732537a283fe8b/2023_Homepage_VP_ExpertSupport.png?h=354&q=90&w=570"
@@ -222,13 +231,13 @@ export default function Home() {
             information you need, including updated financial statements &
             one-on-one account managers for all of your needs.
           </p>
-          <button className="my-5 py-2 px-3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-900 text-blue-700 font-medium hover:text-white border border-blue-900 hover:border-transparent rounded">
+          <button className="my-5 transition duration-150 ease-in-out py-2 px-3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-900 text-blue-700 font-medium hover:text-white border border-blue-900 hover:border-transparent rounded">
             Book A Demo
           </button>
         </div>
       </div>
 
-      {/* ***************** SECTION ==> 6 **************** */}
+      {/* ***************** Hero Sections-Relief  ==> 7 **************** */}
       <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
         <div className="flex flex-col lg:flex-row justify-center gap-8">
           <div className="heading w-full lg:w-5/12 flex flex-col justify-center">
@@ -259,7 +268,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ***************** SECTION ==> 7 **************** */}
+      {/* ***************** Hero Sections-Assisting  ==> 8**************** */}
       <div className="flex  lg:flex-row flex-col-reverse justify-center md:py-12 md:px-6 gap-14 py-10  ">
         <div className=" lg:w-5/12 ">
           <img
@@ -284,7 +293,8 @@ export default function Home() {
           </button>
         </div>
       </div>
-      {/* *****************  Expert’s Analysis ==> 8 **************** */}
+
+      {/* ***************** Expert’s Analysis ==> 9 **************** */}
       <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
         <div className="flex flex-col lg:flex-row justify-center gap-8">
           <div className="w-full lg:w-5/12 flex flex-col justify-center">
@@ -311,8 +321,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* ***************** Explore over ==> 9 **************** */}
 
+      {/* ***************** Explore over ==> 10 **************** */}
       <div className="max-w-none mb-10 pt-10 items-center justify-center h-auto bg-white bg-fixed bg-center bg-cover ">
         <div>
           <h1 className="PatuaOne tracking-wider lg:text-3xl text-center font-medium text-lg  lg:p-8 p-8 py-5">
@@ -330,7 +340,7 @@ export default function Home() {
                   alt="blog"
                 />
                 <div className="p-6">
-                  <h1 className ="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                  <h1 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
                   </h1>
                   <h1 className=" PatuaOne tracking-wider title-font text-lg font-medium text-gray-900 mb-3">
@@ -545,26 +555,27 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ***************** Accordion ==> 10 **************** */}
+      {/* ***************** Accordion ==> 11 **************** */}
       {/* <Accordion/> */}
 
-
-
- {/* ***************** With A Wide ==> 2 **************** */}
- <div className="grid grid-cols-1 sm:grid-cols-1 py-10 lg:grid-cols-3 xl:grid-cols-3 items-center justify-center"
-        style={{ background: "#062d60" }} >
-       
+      {/* ***************** With A Wide ==> 12 **************** */}
+      <div className="grid grid-cols-1 sm:grid-cols-1 py-10 lg:grid-cols-3 xl:grid-cols-3 items-center justify-center"
+        style={{ background: "#062d60" }}
+      >
         <div className="hidden lg:block mx-auto ">
-          <img className="w-[10rem] max-w-none rounded-md"
+          <img
+            className="w-[10rem] max-w-none rounded-md"
             src="https://images.ctfassets.net/88a6qmzs2wdz/2e2TsIsGLaRNV65XbCPjNo/38bdefa478997663bad0f94e1be40529/Artboard_Copy.png?h=345&q=90&w=170"
             alt="App screenshot"
             width={1920}
-            height={1080} />
+            height={1080}
+          />
         </div>
 
         <div className="text-center ">
           <h1 className="PatuaOne tracking-wider text-3xl text-white lg:text-3xl font-medium sm:text-4xl md:text-xl">
-          With A Wide Base Of Happy Customers You Can Join Us And Receive Our Expert Accounting Services
+            With A Wide Base Of Happy Customers You Can Join Us And Receive Our
+            Expert Accounting Services
           </h1>
           <p className=" catamaran my-3 text-sm lg:w-full text-white leading-5 px-10 font-medium">
             Get exclusive access to deadline reminders, free checklists and more
@@ -574,7 +585,6 @@ export default function Home() {
           <button className="my-5 py-2 px-3 bg-transparent items-center mx-auto text-white border  border-white hover:bg-white font-medium hover:text-blue-800 hover:border-transparent rounded">
             Book A Demo
           </button>
-
         </div>
 
         <div className="hidden lg:block mx-auto  ">
@@ -587,40 +597,7 @@ export default function Home() {
           />
         </div>
       </div>
-
-
-
-
-
-      {/* ***************** With a wide base ==> 11 **************** */}
-      {/* <div className="2xl:px-20 md:px-10 2xl:mx-auto 2xl:container "
-        style={{ background: "#062d60" }} >
-        <div className="md:py-12 py-8 ">
-          <div className="flex flex-col items-center justify-center  mx-auto">
-            <h1 className="PatuaOne tracking-wider lg:text-3xl md:text-2xl text-xl 
-            px-10 text-white font-medium  text-center lg:w-1/2 lg:mx-auto lg:text-center">
-              {" "}
-              With a wide base of happy customers you can join us and receive
-              our expert Accounting services
-            </h1>
-            <p className="catamaran text-base leading-normal text-center text-white mt-4 xl:w-1/2 w-10/12">
-              {" "}
-              See what running a business is like with Bench on your side. Try
-              us for free—we’ll do one
-              <br />
-              prior month of your bookkeeping and prepare a set of financial
-              statements for you to keep.
-            </p>
-            <div className="items-center  lg:justify-start sm:justify-start ">
-             
-
-              <button className="my-5 py-2 px-3 bg-transparent items-center mx-auto text-white border  border-white hover:bg-white font-medium hover:text-blue-800 hover:border-transparent rounded">
-            Book A Demo
-          </button>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }
+
