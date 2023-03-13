@@ -1,6 +1,6 @@
 import React from "react";
 import Stats from "./components/stats";
-import Calendar from './components/code-ref/calendar'
+//import Accordion from "./components/accordion";
 
 const logos = [
   {
@@ -32,8 +32,7 @@ const logos = [
 export default function Home() {
   return (
     <div className="pt-20 items-center justify-center h-auto bg-white  bg-fixed bg-center bg-cover ">
-
-      {/* ***************** Run Your Business ==> 1 **************** */}
+      {/* ***************** Ditch The ==> 1 **************** */}
       <div className="xl:container 2xl:mx-auto  py-24 lg:py-24 lg:px-20 md:py-20 md:px-6  px-4 text-white"
         style={{ background: "#062d60" }}
       >
@@ -41,15 +40,16 @@ export default function Home() {
           <div className="w-full leading-10 lg:w-5/12 lg:ml-16 pb-16 lg:text-left  text-center ">
             <h1 className="PatuaOne tracking-wider pb-5 text-2xl lg:text-5xl md:text-2xl md:pb-5  md:max-w-xs lg:max-w-lg text-center  md:text-center lg:text-left md:mx-auto text-white font-medium lg:pb-8  ">
               {" "}
-              Run your business,
-              <br className="hidden lg:block md:hidden" /> While we do
-              <br className="hidden lg:block md:hidden" /> The accounting.
+              Ditch the delays
+              <br className="hidden lg:block md:hidden" /> with DIY accounting,
+              <br className="hidden lg:block md:hidden" /> be compliance ready
             </h1>
+
             <p className="catamaran  font-normal leading-6 text-center lg:text-left   text-white">
-              Experience Efficient Accounting and Returns Preparation along with
-              Customized MIS Reports for Decision Making with Bookxpert,your
-              virtual real-time Accounting partner thereby giving you enough
-              Time to Focus on your Core Tasks.
+              If you have a long list of business goals then definitely you need
+              to choose the right accounting service for efficient management of
+              your finances.Boost up your business performance with accurate
+              books by choosing our remote accounting & bookkeeping services
             </p>
             <button className="my-5 p-0 hover:rounded-bl-2xl hover:rounded-tr-2xl   px-3 bg-transparent items-center mx-auto text-white border  border-white hover:bg-white font-medium  hover:text-blue-800 hover:border-transparent rounded">
               Book A Demo
@@ -65,16 +65,9 @@ export default function Home() {
         </div>
       </div>
 
-
-
-{/* ***********Calender Testing ********************************** */}
-<Calendar/>
-
-
-
-
-      {/* ***************** Are You Ready ==> 2 **************** */}
-      <div className="grid grid-cols-1 sm:grid-cols-1  py-24 lg:grid-cols-3 xl:grid-cols-3  text-white   items-center justify-center"
+      {/* ***************** Accurate Books ==> 2 **************** */}
+      <div
+        className="grid grid-cols-1 sm:grid-cols-1  py-24 lg:grid-cols-3 xl:grid-cols-3  text-white   items-center justify-center"
         style={{ background: "#f7f8fa" }}
       >
         <div className="hidden lg:block   mx-auto">
@@ -88,22 +81,24 @@ export default function Home() {
         </div>
 
         <div className=" text-center text-black ">
-          <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl font-medium sm:text-4xl md:text-xl">
-            Are you ready for tax season?
+          <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl lg:p-0 px-10 font-medium sm:text-4xl md:text-xl">
+            {/* Are you ready for tax season? */}
+            Accurate Books, no fines to pay
           </h1>
           <p className=" catamaran my-3 text-sm lg:w-full text-black leading-5 px-10 font-medium">
-            Get exclusive access to deadline reminders, free checklists and more
-            in our Tax Resource Hub.
+            Wipe out the stress around your compliances with accurate financial
+            deliverables from our expert Accounting and Bookkeeping team. Get
+            Business insights , manage your cash flow simultaneously with our
+            advanced financial reports
           </p>
 
           <button className="my-5 py-2 px-3 hover:rounded-3xl bg-transparent hover:bg-blue-900 text-blue-900 font-medium text-base hover:text-white  border border-blue-900 hover:border-transparent rounded">
             Book A Demo
           </button>
 
-          <p className="catamaran my-3 text-sm lg:w-full  text-black leading-5 px-10 font-medium">
-            If you're several years behind on business taxes, get caught up and
-            filed with Bench Retro.
-          </p>
+          {/* <p className="catamaran my-3 text-sm lg:w-full  text-black leading-5 px-10 font-medium">
+          Focussed on expanding our quality accounting & bookkeeping services to serve more small businesses and Auditors
+          </p> */}
         </div>
 
         <div className="mx-auto ">
@@ -117,14 +112,14 @@ export default function Home() {
         </div>
       </div>
 
-
-
-      {/* ***************** Review ==> 3 **************** */}
+      {/* ***************** Focussed Review ==> 3 **************** */}
       <div className="max-w-none py-20 items-center justify-center h-auto  bg-white bg-fixed bg-center bg-cover ">
         <div>
           <h1 className="PatuaOne tracking-wider lg:text-3xl text-center font-medium lg:p-8 p-8 py-3">
-            We are on a journey to simplify accounting & bookkeeping for MSMEs &
-            Auditors.
+            {/* We are on a journey to simplify accounting & bookkeeping for MSMEs &
+            Auditors. */}
+            Focussed on expanding our quality accounting & bookkeeping services
+            to serve more small businesses and Auditors
           </h1>
         </div>
 
@@ -135,8 +130,8 @@ export default function Home() {
 
             <div className=" py-4">
               <p className="catamaran text-base ">
-                "Now that Bench has a tax solution service, they're a 'one stop
-                shop' for small businesses to manage their books and taxes."
+                Why should small businesses consider outsourcing Accounting &
+                Bookkeeping?
               </p>
               <p className=" catamaran text-xs flex">
                 <img
@@ -160,8 +155,8 @@ export default function Home() {
 
             <div className=" py-4">
               <p className=" catamaran text-base">
-                "This is the first year where it’s tax season and I don’t feel
-                anxious one bit."
+                What's in Budget 2023's surprise tax package for small
+                businesses?
               </p>
               <p className="catamaran text-xs flex">
                 <img
@@ -183,8 +178,8 @@ export default function Home() {
 
             <div className=" py-4">
               <p className="catamaran  text-base">
-                "Ripping your hair out at tax time? All I have to say is I'm so
-                glad I used Bench last year!"{" "}
+                When choosing an outsourcing firm to do their books, what
+                factors should small businesses consider?
               </p>
               <p className="catamaran text-xs flex">
                 <img
@@ -206,10 +201,32 @@ export default function Home() {
       {/* ***************** border ==> 4 **************** */}
       <div className="w-80 lg:w-3/4 md:w-4/5 mx-auto border border-gray-200 mb-10"></div>
 
-      {/* ***************** statistics ==>5 **************** */}
-      <Stats />
+      {/* ***************** What you get with Bookxpert. ==> 5**************** */}
 
-      {/* ***************** Hero Sections-No Delays ==> 6 **************** */}
+      <div className=" text-center mx-auto justify-center">
+        <div className="text-center text-black ">
+          <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl font-medium sm:text-4xl md:text-xl">
+            What you get with Bookxpert.
+          </h1>
+          <img className="text-center mx-auto my-10" src="/Book.png" />
+          <h3 className="PatuaOne lg:max-w-2xl lg:mx-auto tracking-wider text-3xl lg:text-2xl font-medium sm:text-4xl md:text-xl">
+            Experience better finance management with books prepared and
+            validated by experts
+          </h3>
+          <p className=" catamaran my-3 text-xs lg:max-w-2xl lg:mx-auto  text-black leading-5 px-10 font-medium">
+            Avoid setbacks in your business due to undone books. With
+            Bookxpert’s remote accounting and bookkeeping services you receive
+            benefits such as advanced financial reports, inventory reports, that
+            help you manage your cash flow & overall operations more effectively
+            to achieve your business goals.
+          </p>
+          <button className="my-5 py-2 px-3 hover:rounded-3xl bg-transparent hover:bg-blue-900 text-blue-900 font-medium text-base hover:text-white  border border-blue-900 hover:border-transparent rounded">
+            Book A Demo
+          </button>
+        </div>
+      </div>
+
+      {/* ***************** Hero Sections-Insightful ==> 6 **************** */}
       <div className="flex  lg:flex-row flex-col-reverse justify-center md:py-12 md:px-6 gap-14 py-10  ">
         <div className=" lg:w-5/12">
           <img
@@ -221,15 +238,15 @@ export default function Home() {
         <div className="w-full lg:w-5/12 flex flex-col justify-center">
           <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-medium py-5 leading-9 text-gray-800 ">
             {" "}
-            No Delays , On - Time Reports
+            Insightful Reports
           </h1>
 
           <p className=" catamaran px-10 lg:px-0 font-normal text-base lg:mr-20 text-center lg:text-left">
             {" "}
-            Gain access to accurate financial reports and documents, through our
-            owner ‘s app. Our financial reports will provide you with the
-            information you need, including updated financial statements &
-            one-on-one account managers for all of your needs.
+            We provide the highest levels of convenience and support to small
+            businesses and Auditors by delivering accurate monthly reports which
+            assist them with cash flow management and facing faceless
+            assessments and audits.
           </p>
           <button className="my-5 transition duration-150 ease-in-out py-2 px-3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-900 text-blue-700 font-medium hover:text-white border border-blue-900 hover:border-transparent rounded">
             Book A Demo
@@ -237,21 +254,21 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ***************** Hero Sections-Relief  ==> 7 **************** */}
+      {/* ***************** Hero Sections-Dedicated   ==> 7 **************** */}
       <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
         <div className="flex flex-col lg:flex-row justify-center gap-8">
           <div className="heading w-full lg:w-5/12 flex flex-col justify-center">
             <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-medium py-5 leading-9 text-gray-800 ">
               {" "}
-              Relief from Departmental Levies
+              Dedicated Support
             </h1>
 
             <p className="catamaran  text-base lg:mr-20 text-center lg:text-left">
               {" "}
-              Delivery of monthly financial reports in advance helps with smooth
-              and perfect filing thereby helping businesses getting relief from
-              unnecessary departmental Levies like Fines, Penalties,Late Fees
-              etc.
+              A dedicated account manager will handle all your accounting and
+              bookkeeping needs. Initially, your assigned expert will collect
+              and analyse all financial data, followed by expert verification
+              and validation.
             </p>
             <button className="my-5 py-2 px-3  mx-auto bg-transparent lg:ml-0  hover:bg-blue-900 text-blue-700 font-medium hover:text-white  border border-blue-900 hover:border-transparent rounded">
               Book A Demo
@@ -268,7 +285,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ***************** Hero Sections-Assisting  ==> 8**************** */}
+      {/* ***************** Hero Sections- Smooth Compliances  ==> 8**************** */}
       <div className="flex  lg:flex-row flex-col-reverse justify-center md:py-12 md:px-6 gap-14 py-10  ">
         <div className=" lg:w-5/12 ">
           <img
@@ -280,13 +297,15 @@ export default function Home() {
         <div className="w-full lg:w-5/12 flex flex-col justify-center">
           <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-medium py-5 leading-9 text-gray-800 ">
             {" "}
-            Assisting Auditors
+            Smooth Compliances
           </h1>
 
-          <p className=" catamaran font-medium text-base lg:mr-20 text-center lg:text-left ">
+          <p className=" catamaran font-medium text-base lg:mr-20 lg:p-0 px-5 text-center lg:text-left ">
             {" "}
-            We will provide Data in Reusable Formats along with supporting
-            documents within Deadlines for Attestation & Filing Returns.
+            We value your trust in our accounting and bookkeeping services.
+            Therefore, we ensure your books are regularly updated so that you
+            have all the records present with you at the time of filing your
+            compliances
           </p>
           <button className="my-5 py-2 px-3 mx-auto bg-transparent lg:ml-0  hover:bg-blue-900 text-blue-700 font-medium hover:text-white  border border-blue-900 hover:border-transparent rounded">
             Book A Demo
@@ -294,8 +313,54 @@ export default function Home() {
         </div>
       </div>
 
+      {/* ***************** statistics ==>9 **************** */}
+      <Stats />
+
+      {/* ***************** Accurate Books ==> 10 **************** */}
+      {/* <div
+        className="grid grid-cols-1 sm:grid-cols-1  py-24 lg:grid-cols-3 xl:grid-cols-3  text-white   items-center justify-center"
+        style={{ background: "#f7f8fa" }}
+      >
+        <div className="hidden lg:block   mx-auto">
+          <img
+            className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+            src="https://images.ctfassets.net/88a6qmzs2wdz/1dLJZFfakIm6ze6ySJAzRS/19329d5a2f956af08c6ec75c15fdf218/TaxHub-Left.png?h=236&q=90&w=170"
+            alt="App screenshot"
+            width={1920}
+            height={1080}
+          />
+        </div>
+
+        <div className=" text-center text-black ">
+          <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl font-medium sm:text-4xl md:text-xl">
+           
+            Accurate Books, no fines to pay
+          </h1>
+          <p className=" catamaran my-3 text-sm lg:w-full text-black leading-5 px-10 font-medium">
+            Wipe out the stress around your compliances with accurate financial
+            deliverables from our expert Accounting and Bookkeeping team. Get
+            Business insights , manage your cash flow simultaneously with our
+            advanced financial reports
+          </p>
+
+          <button className="my-5 py-2 px-3 hover:rounded-3xl bg-transparent hover:bg-blue-900 text-blue-900 font-medium text-base hover:text-white  border border-blue-900 hover:border-transparent rounded">
+            Book A Demo
+          </button>
+        </div>
+
+        <div className="mx-auto ">
+          <img
+            className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+            src="https://images.ctfassets.net/88a6qmzs2wdz/6tia5roEXDz2daFkUPIFMt/524a4ce1da60bbe68330d41cea3f0f3f/TaxHub-Right.png?h=235&q=90&w=170"
+            alt="App screenshot"
+            width={1920}
+            height={1080}
+          />
+        </div>
+      </div> */}
+
       {/* ***************** Expert’s Analysis ==> 9 **************** */}
-      <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
+      {/* <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
         <div className="flex flex-col lg:flex-row justify-center gap-8">
           <div className="w-full lg:w-5/12 flex flex-col justify-center">
             <h1 className="PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-medium py-5 leading-9 text-gray-800 ">
@@ -320,7 +385,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* ***************** Explore over ==> 10 **************** */}
       <div className="max-w-none mb-10 pt-10 items-center justify-center h-auto bg-white bg-fixed bg-center bg-cover ">
@@ -559,7 +624,8 @@ export default function Home() {
       {/* <Accordion/> */}
 
       {/* ***************** With A Wide ==> 12 **************** */}
-      <div className="grid grid-cols-1 sm:grid-cols-1 py-10 lg:grid-cols-3 xl:grid-cols-3 items-center justify-center"
+      <div
+        className="grid grid-cols-1 sm:grid-cols-1 py-10 lg:grid-cols-3 xl:grid-cols-3 items-center justify-center"
         style={{ background: "#062d60" }}
       >
         <div className="hidden lg:block mx-auto ">
@@ -572,14 +638,15 @@ export default function Home() {
           />
         </div>
 
-        <div className="text-center ">
-          <h1 className="PatuaOne tracking-wider text-3xl text-white lg:text-3xl font-medium sm:text-4xl md:text-xl">
-            With A Wide Base Of Happy Customers You Can Join Us And Receive Our
-            Expert Accounting Services
+        <div className="text-center lg:max-w-4/5 lg:mx-auto">
+          <h1 className="  PatuaOne tracking-wider text-3xl text-white lg:text-3xl font-medium sm:text-4xl md:text-xl">
+            Join Bookxpert and manage business at your comfort with expert
+            accounting & bookkeeping services
           </h1>
-          <p className=" catamaran my-3 text-sm lg:w-full text-white leading-5 px-10 font-medium">
-            Get exclusive access to deadline reminders, free checklists and more
-            in our Tax Resource Hub.
+          <p className=" catamaran my-3   text-sm  text-white leading-5 px-10 font-medium">
+            Don’t let incomplete books ruin your finances. Our accounting &
+            bookkeeping services ensure that you are one step ahead of your
+            competitors and compliance ready with updated financials.
           </p>
 
           <button className="my-5 py-2 px-3 bg-transparent items-center mx-auto text-white border  border-white hover:bg-white font-medium hover:text-blue-800 hover:border-transparent rounded">

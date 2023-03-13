@@ -1,7 +1,7 @@
 import React from "react";
 const stats = [
-    { id: 1, name: 'Creators on the platform', value: '8,000+' },
-    { id: 2, name: 'Flat platform fee', value: '3%' },
+    { id: 1, name: 'Branches', value: '15 +' },
+    { id: 2, name: 'industries', value: '25 +' },
     { id: 3, name: 'Uptime guarantee', value: '99.9%' },
     { id: 4, name: 'Paid out to creators', value: '$70M' },
   ]
@@ -13,10 +13,10 @@ const stats = [
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center">
               <h1 className="PatuaOne tracking-wider text-3xl font-medium  text-gray-900 sm:text-4xl">
-                Trusted by creators worldwide
+              Bookxpert journey
               </h1>
               <p className="catamaran mt-4 text-lg leading-8 text-gray-600 font-medium">
-                Lorem ipsum dolor sit amet consect adipisicing possimus.
+              Here we will place facts about our company in a symbolic representation like GOI Recognized
               </p>
             </div>
             <dl className="mt-16 grid grid-cols-1  overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
