@@ -2,8 +2,8 @@ import React from "react";
 const stats = [
     { id: 1, name: 'Branches', value: '15 +' },
     { id: 2, name: 'industries', value: '25 +' },
-    { id: 3, name: 'Uptime guarantee', value: '99.9%' },
-    { id: 4, name: 'Paid out to creators', value: '$70M' },
+    { id: 3, name: ' Clients', value: '300 +' },
+    { id: 4, name: 'our journey ', value: '2' },
   ]
   
   export default function Stats() {
@@ -14,9 +14,11 @@ const stats = [
             <div className="text-center">
               <h1 className="PatuaOne tracking-wider text-3xl font-medium  text-gray-900 sm:text-4xl">
               Bookxpert journey
+             
               </h1>
               <p className="catamaran mt-4 text-lg leading-8 text-gray-600 font-medium">
-              Here we will place facts about our company in a symbolic representation like GOI Recognized
+              {/* Here we will place facts about our company in a symbolic representation like GOI Recognized */}
+              A GOI Recognized Accounting firm 
               </p>
             </div>
             <dl className="mt-16 grid grid-cols-1  overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">

@@ -46,10 +46,7 @@ export default function Home() {
             </h1>
 
             <p className="catamaran text-base font-normal  text-center lg:text-left   text-white">
-              If you have a long list of business goals then definitely you need
-              to choose the right accounting service for efficient management of
-              your finances.Boost up your business performance with accurate
-              books by choosing our remote accounting & bookkeeping services
+            Do it yourself accounting  can hamper with your finances. Let Bookxpert handle your accounting by delivering accurate and timely financials
             </p>
             <button className="my-5 p-0 hover:rounded-bl-2xl hover:rounded-tr-2xl px-3 bg-transparent items-center mx-auto text-white border  border-white hover:bg-white font-medium  hover:text-blue-800 hover:border-transparent rounded">
               Book A Free Consultation
@@ -63,10 +60,12 @@ export default function Home() {
             />
           </div>
         </div>
+
+        
       </div>
 
       {/* ***************** Accurate Books ==> 2 **************** */}
-      <div className="grid grid-cols-1 sm:grid-cols-1 py-24 xl:grid-cols-3 lg:flex " style={{ background: "#f7f8fa" }}>
+      <div className="grid grid-cols-1 sm:grid-cols-1 py-16 xl:grid-cols-3 lg:flex " style={{ background: "#f7f8fa" }}>
         <div className="hidden lg:inline-block lg:pl-48">
           <img className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             src="https://images.ctfassets.net/88a6qmzs2wdz/4xjVaP4TqAYoBt3WVduqwW/b8a800151f09ffec2e70abcd5d9a2bbb/Frame_14795.png?h=237&q=90&w=170"
@@ -79,10 +78,7 @@ export default function Home() {
             Accurate Books, no fines to pay
           </h1>
           <p className="catamaran my-3 text-base lg:min-w-xl lg:mx-auto text-black lg:px-10  px-10 font-medium">
-            Wipe out the stress around your compliances with accurate financial
-            deliverables from our expert Accounting and Bookkeeping team. Get
-            Business insights , manage your cash flow simultaneously with our
-            advanced financial reports
+          Wipe out the stress  around your compliances and manage your business easily with accurate financial reports from our expert Accounting team.
           </p>
 
           <button className="my-5 py-2 px-3 hover:rounded-bl-2xl hover:rounded-tr-2xl  bg-transparent hover:bg-blue-900 text-blue-900 font-medium text-base hover:text-white  border border-blue-900 hover:border-transparent rounded">
@@ -98,12 +94,11 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ***************** Focussed Review ==> 3 **************** */}
+      {/* ***************** Timely Accounting Review ==> 3 **************** */}
       <div className="max-w-none py-20 items-center justify-center h-auto  bg-white bg-fixed bg-center bg-cover ">
         <div>
           <h1 className="PatuaOne tracking-wider lg:max-w-5xl lg:mx-auto lg:text-3xl text-center font-medium lg:p-8 p-8 py-3">
-            Focussed on expanding our quality accounting & bookkeeping services
-            to serve more small businesses and Auditors
+          Timely Accounting Services for Small Businesses & Auditors
           </h1>
         </div>
 
@@ -190,14 +185,10 @@ export default function Home() {
           <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl font-medium sm:text-4xl md:text-xl">
             What you get with Bookxpert. </h1>
           <img className="text-center mx-auto my-10" src="/Book.png" />
-          <h3 className="PatuaOne lg:max-w-2xl lg:mx-auto tracking-wider text-xl lg:text-2xl font-medium sm:text-4xl md:text-xl">
-            Experience better finance management with books prepared and validated by experts</h3>
+          <h3 className="PatuaOne lg:max-w-3xl lg:mx-auto tracking-wider text-3xl lg:text-3xl font-medium sm:text-4xl md:text-xl">
+          Easy business management with tidy financials</h3>
           <p className="catamaran my-3 text-base lg:max-w-3xl lg:mx-auto text-black px-10 font-normal">
-            Avoid setbacks in your business due to undone books. With
-            Bookxpert’s remote accounting and bookkeeping services you receive
-            benefits such as advanced financial reports, inventory reports, that
-            help you manage your cash flow & overall operations more effectively
-            to achieve your business goals.
+          Avoid setbacks in your business due to undone books. With  Bookxpert’s remote accounting services you receive benefits like advanced financial reports, inventory reports to help you manage your business at fingertips
           </p>
          
           <button className="my-5 py-2 px-3 hover:rounded-bl-2xl hover:rounded-tr-2xl bg-transparent hover:bg-blue-900 text-blue-900 font-medium text-base hover:text-white  border border-blue-900 hover:border-transparent rounded">
@@ -481,13 +472,10 @@ export default function Home() {
 
         <div className="text-center lg:px-24 lg:py-10 py-10 lg:pt-24 lg:max-w-4xl md:px-5 lg:mx-auto">
           <h1 className="PatuaOne tracking-wider lg:px-0 lg:mx-auto text-xl text-white lg:text-3xl font-medium sm:text-4xl md:text-xl ">
-            Join Bookxpert and manage business at your comfort with expert
-            accounting & bookkeeping services
+          Join Bookxpert and enjoy seamless Accounting services
           </h1>
           <p className=" catamaran my-3 text-base text-white px-10 lg:px-0 font-medium">
-            Don’t let incomplete books ruin your finances. Our accounting &
-            bookkeeping services ensure that you are one step ahead of your
-            competitors and compliance ready with updated financials.
+            Don’t let incomplete books ruin your finances. Our accounting & bookkeeping services ensure that you are one step ahead of your competitors and compliance ready with updated financials
           </p>
 
           <button className="my-5 py-2 hover:rounded-bl-2xl hover:rounded-tr-2xl px-3 bg-transparent items-center mx-auto text-white border  border-white hover:bg-white font-medium hover:text-blue-800 hover:border-transparent rounded">
