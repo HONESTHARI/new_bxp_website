@@ -1,6 +1,7 @@
 import React from "react";
 import Stats from "./components/stats";
 //import Accordion from "./components/accordion";
+import AccordionBasic from "./components/code-ref/accordion";
 
 const logos = [
   {
@@ -33,7 +34,8 @@ export default function Home() {
   return (
     <div className="pt-20 items-center justify-center h-auto bg-white  bg-fixed bg-center bg-cover ">
       {/* ***************** Ditch The ==> 1 **************** */}
-      <div className="xl:container 2xl:mx-auto  py-24 lg:py-24 lg:px-20 md:py-20 md:px-6  px-4 text-white"
+      <div
+        className="xl:container 2xl:mx-auto  py-24 lg:py-24 lg:px-20 md:py-20 md:px-6  px-4 text-white"
         style={{ background: "#062d60" }}
       >
         <div className="flex flex-col lg:flex-row justify-center px-8 ">
@@ -46,7 +48,9 @@ export default function Home() {
             </h1>
 
             <p className="catamaran text-base font-normal  text-center lg:text-left   text-white">
-            Do it yourself accounting  can hamper with your finances. Let Bookxpert handle your accounting by delivering accurate and timely financials
+              Do it yourself accounting can hamper with your finances. Let
+              Bookxpert handle your accounting by delivering accurate and timely
+              financials
             </p>
             <button className="my-5 p-0 hover:rounded-bl-2xl hover:rounded-tr-2xl px-3 bg-transparent items-center mx-auto text-white border  border-white hover:bg-white font-medium  hover:text-blue-800 hover:border-transparent rounded">
               Book A Free Consultation
@@ -60,37 +64,186 @@ export default function Home() {
             />
           </div>
         </div>
-
-        
       </div>
 
+      {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      {/* <AccordionBasic /> */}
+      {/* ***************** Hero Sections-Insightful ==> 6 **************** */}
+      {/* <div id="accordionFlushExample">
+  <div
+    class="rounded-none border border-t-0 border-l-0 border-r-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+    <h2 class="mb-0" id="flush-headingOne">
+      <button
+        class="group relative flex w-full items-center rounded-none border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+        type="button"
+        data-te-collapse-init
+        data-te-target="#flush-collapseOne"
+        aria-expanded="false"
+        aria-controls="flush-collapseOne">
+        Accordion Item #1
+        <span
+          class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </span>
+      </button>
+    </h2>
+    <div
+      id="flush-collapseOne"
+      class="!visible border-0"
+      data-te-collapse-item
+      data-te-collapse-show
+      aria-labelledby="flush-headingOne"
+      data-te-parent="#accordionFlushExample">
+      <div class="py-4 px-5">
+        Placeholder content for this accordion, which is intended to
+        demonstrate the
+        <code>.accordion-flush</code> class. This is the first item's
+        accordion body.
+      </div>
+    </div>
+  </div>
+  <div
+    class="rounded-none border border-l-0 border-r-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+    <h2 class="mb-0" id="flush-headingTwo">
+      <button
+        class="group relative flex w-full items-center rounded-none border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+        type="button"
+        data-te-collapse-init
+        data-te-collapse-collapsed
+        data-te-target="#flush-collapseTwo"
+        aria-expanded="false"
+        aria-controls="flush-collapseTwo">
+        Accordion Item #2
+        <span
+          class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </span>
+      </button>
+    </h2>
+    <div
+      id="flush-collapseTwo"
+      class="!visible hidden border-0"
+      data-te-collapse-item
+      aria-labelledby="flush-headingTwo"
+      data-te-parent="#accordionFlushExample">
+      <div class="py-4 px-5">
+        Placeholder content for this accordion, which is intended to
+        demonstrate the
+        <code>.accordion-flush</code> class. This is the second item's
+        accordion body. Let's imagine this being filled with some actual
+        content.
+      </div>
+    </div>
+  </div>
+  <div
+    class="rounded-none border border-l-0 border-r-0 border-b-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+    <h2 class="mb-0" id="flush-headingThree">
+      <button
+        class="group relative flex w-full items-center rounded-none border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+        type="button"
+        data-te-collapse-init
+        data-te-collapse-collapsed
+        data-te-target="#flush-collapseThree"
+        aria-expanded="false"
+        aria-controls="flush-collapseThree">
+        Accordion Item #3
+        <span
+          class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </span>
+      </button>
+    </h2>
+    <div
+      id="flush-collapseThree"
+      class="!visible hidden"
+      data-te-collapse-item
+      aria-labelledby="flush-headingThree"
+      data-te-parent="#accordionFlushExample">
+      <div class="py-4 px-5">
+        Placeholder content for this accordion, which is intended to
+        demonstrate the
+        <code>.accordion-flush</code> class. This is the third item's
+        accordion body. Nothing more exciting happening here in terms of
+        content, but just filling up the space to make it look, at least
+        at first glance, a bit more representative of how this would look
+        in a real-world application.
+      </div>
+    </div>
+  </div>
+</div> */}
       {/* ***************** Accurate Books ==> 2 **************** */}
-      <div className="grid grid-cols-1 sm:grid-cols-1 py-16 xl:grid-cols-3 lg:flex " style={{ background: "#f7f8fa" }}>
+      <div
+        className="grid grid-cols-1 sm:grid-cols-1 py-16 xl:grid-cols-3 lg:flex "
+        style={{ background: "#f7f8fa" }}
+      >
         <div className="hidden lg:inline-block lg:pl-48">
-          <img className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+          <img
+            className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             src="https://images.ctfassets.net/88a6qmzs2wdz/4xjVaP4TqAYoBt3WVduqwW/b8a800151f09ffec2e70abcd5d9a2bbb/Frame_14795.png?h=237&q=90&w=170"
             alt="App screenshot"
             width={1920}
-            height={1080} />
+            height={1080}
+          />
         </div>
         <div className=" text-center lg:px-0 text-black lg:max-w-4xl lg:mx-auto">
+          
+        <button className="my-5 py-0 mb-10 px-10 bg-transparent text-blue-900 font-medium text-base border border-blue-900   rounded-2xl">
+           LIMITED TIME OFFER
+          </button>
           <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl lg:px-0 px-10 font-medium sm:text-4xl md:text-xl">
             Accurate Books, no fines to pay
           </h1>
           <p className="catamaran my-3 text-base lg:min-w-xl lg:mx-auto text-black lg:px-10  px-10 font-medium">
-          Wipe out the stress  around your compliances and manage your business easily with accurate financial reports from our expert Accounting team.
+            Wipe out the stress around your compliances and manage your business
+            easily with accurate financial reports from our expert Accounting
+            team.
           </p>
 
           <button className="my-5 py-2 px-3 hover:rounded-bl-2xl hover:rounded-tr-2xl  bg-transparent hover:bg-blue-900 text-blue-900 font-medium text-base hover:text-white  border border-blue-900 hover:border-transparent rounded">
             Learn More
           </button>
         </div>
-        <div className="mx-auto lg:pr-48 ">
-          <img className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+        <div className="mx-auto lg:pr-48">
+          <img
+            className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             src="https://images.ctfassets.net/88a6qmzs2wdz/2P7hmuf49eigOK0WjNh0cr/776add60874a88d14370eb5a29342b32/Frame_14796.png?h=237&q=90&w=170"
             alt="App screenshot"
             width={1920}
-            height={1080} />
+            height={1080}
+          />
         </div>
       </div>
 
@@ -98,7 +251,7 @@ export default function Home() {
       <div className="max-w-none py-20 items-center justify-center h-auto  bg-white bg-fixed bg-center bg-cover ">
         <div>
           <h1 className="PatuaOne tracking-wider lg:max-w-5xl lg:mx-auto lg:text-3xl text-center font-medium lg:p-8 p-8 py-3">
-          Timely Accounting Services for Small Businesses & Auditors
+            Timely Accounting Services for Small Businesses & Auditors
           </h1>
         </div>
 
@@ -183,14 +336,19 @@ export default function Home() {
       <div className=" text-center mx-auto justify-center">
         <div className="text-center text-black">
           <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl font-medium sm:text-4xl md:text-xl">
-            What you get with Bookxpert. </h1>
+            What you get with Bookxpert.{" "}
+          </h1>
           <img className="text-center mx-auto my-10" src="/Book.png" />
           <h3 className="PatuaOne lg:max-w-3xl lg:mx-auto tracking-wider text-3xl lg:text-3xl font-medium sm:text-4xl md:text-xl">
-          Easy business management with tidy financials</h3>
+            Easy business management with tidy financials
+          </h3>
           <p className="catamaran my-3 text-base lg:max-w-3xl lg:mx-auto text-black px-10 font-normal">
-          Avoid setbacks in your business due to undone books. With  Bookxpert’s remote accounting services you receive benefits like advanced financial reports, inventory reports to help you manage your business at fingertips
+            Avoid setbacks in your business due to undone books. With
+            Bookxpert’s remote accounting services you receive benefits like
+            advanced financial reports, inventory reports to help you manage
+            your business at fingertips
           </p>
-         
+
           <button className="my-5 py-2 px-3 hover:rounded-bl-2xl hover:rounded-tr-2xl bg-transparent hover:bg-blue-900 text-blue-900 font-medium text-base hover:text-white  border border-blue-900 hover:border-transparent rounded">
             See How BookXpert Works
           </button>
@@ -286,6 +444,53 @@ export default function Home() {
 
       {/* ***************** statistics ==>9 **************** */}
       <Stats />
+
+
+
+      {/* ++++++++++++++++++++++++++++++++++++++++++++ */}
+
+       {/* ***************** Accurate Books ==> 2 **************** */}
+       <div
+        className="grid grid-cols-1 sm:grid-cols-1 py-16 xl:grid-cols-3 lg:flex "
+        style={{ background: "#f7f8fa" }}
+      >
+        <div className="hidden lg:inline-block lg:pl-48">
+          <img
+            className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+            src="https://images.ctfassets.net/88a6qmzs2wdz/1dLJZFfakIm6ze6ySJAzRS/19329d5a2f956af08c6ec75c15fdf218/TaxHub-Left.png?h=236&q=90&w=170"
+            alt="App screenshot"
+            width={1920}
+            height={1080}
+          />
+        </div>
+        <div className=" text-center lg:px-0 text-black lg:max-w-4xl lg:mx-auto">
+          
+     
+          <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl lg:px-0 px-10 font-medium sm:text-4xl md:text-xl">
+          Are you ready for tax season?
+          </h1>
+          <p className="catamaran my-3 text-base lg:min-w-xl lg:mx-auto text-black lg:px-10  px-10 font-medium">
+          Get exclusive access to deadline reminders, free checklists and more in our Tax Resource Hub.
+          </p>
+
+          <button className="my-5 py-2 px-3 hover:rounded-bl-2xl hover:rounded-tr-2xl  bg-transparent hover:bg-blue-900 text-blue-900 font-medium text-base hover:text-white  border border-blue-900 hover:border-transparent rounded">
+            Learn More
+          </button>
+
+          <p className="catamaran my-3 text-base lg:min-w-xl lg:mx-auto text-black lg:px-10  px-10 font-medium">
+          If you're several years behind on business taxes, get caught up and filed with Bench Retro.          </p>
+        </div>
+        <div className="mx-auto lg:pr-48">
+          <img
+            className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+            src="https://images.ctfassets.net/88a6qmzs2wdz/6tia5roEXDz2daFkUPIFMt/524a4ce1da60bbe68330d41cea3f0f3f/TaxHub-Right.png?h=235&q=90&w=170"
+            alt="App screenshot"
+            width={1920}
+            height={1080}
+          />
+        </div>
+      </div>
+
 
       {/* ***************** Explore over ==> 10 **************** */}
       <div className="max-w-none mb-10 pt-10 items-center justify-center h-auto bg-white bg-fixed bg-center bg-cover ">
@@ -472,10 +677,12 @@ export default function Home() {
 
         <div className="text-center lg:px-24 lg:py-10 py-10 lg:pt-24 lg:max-w-4xl md:px-5 lg:mx-auto">
           <h1 className="PatuaOne tracking-wider lg:px-0 lg:mx-auto text-xl text-white lg:text-3xl font-medium sm:text-4xl md:text-xl ">
-          Join Bookxpert and enjoy seamless Accounting services
+            Join Bookxpert and enjoy seamless Accounting services
           </h1>
           <p className=" catamaran my-3 text-base text-white px-10 lg:px-0 font-medium">
-            Don’t let incomplete books ruin your finances. Our accounting & bookkeeping services ensure that you are one step ahead of your competitors and compliance ready with updated financials
+            Don’t let incomplete books ruin your finances. Our accounting &
+            bookkeeping services ensure that you are one step ahead of your
+            competitors and compliance ready with updated financials
           </p>
 
           <button className="my-5 py-2 hover:rounded-bl-2xl hover:rounded-tr-2xl px-3 bg-transparent items-center mx-auto text-white border  border-white hover:bg-white font-medium hover:text-blue-800 hover:border-transparent rounded">
