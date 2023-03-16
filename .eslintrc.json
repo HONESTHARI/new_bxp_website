@@ -7,6 +7,10 @@
 
 }
 
+{
+  "extends": ["eslint:recommended", "next"]
+}
+
 
 // {
 //   "extends": "next",
