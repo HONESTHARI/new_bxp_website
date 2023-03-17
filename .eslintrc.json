@@ -1,15 +1,15 @@
+{
+  "extends": "next/core-web-vitals"
+}
+
 // {
-//   "extends": "next/core-web-vitals"
+//   "extends": "eslint-disable"
+
 // }
 
-{
-  "extends": "eslint-disable"
-
-}
-
-{
-  "extends": ["eslint:recommended", "next"]
-}
+// {
+//   "extends": ["eslint:recommended", "next"]
+// }
 
 
 // {

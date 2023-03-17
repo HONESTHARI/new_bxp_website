@@ -113,7 +113,7 @@ export default function Navbar() {
             <Popover className="relative">
               {({ open }) => (
                 <>
-                  <Popover.Button
+                  {/* <Popover.Button
                     className={classNames(
                       open ? "text-gray-900" : "text-gray-500",
                       "group inline-flex items-center rounded-md bg-transparent text-white font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
@@ -127,7 +127,7 @@ export default function Navbar() {
                       )}
                       aria-hidden="true"
                     />
-                  </Popover.Button>
+                  </Popover.Button> */}
 
                   <Transition
                     as={Fragment}
@@ -214,7 +214,7 @@ export default function Navbar() {
             </Popover.Button>
           </div>
 
-          <div className="flex justify-center lg:w-0 lg:flex-1">
+          <div className="flex justify-center text-center mx-auto   lg:pl-36 lg:w-0 lg:flex-1 ">
             <a href="#">
               <span className="sr-only">Your Company</span>
               <img
