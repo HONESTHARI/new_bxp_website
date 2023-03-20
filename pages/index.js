@@ -1,5 +1,10 @@
+/* eslint-disable */
 import React from "react";
 import Stats from "./components/stats";
+
+
+
+
 //import Accordion from "./components/accordion";
 import AccordionBasic from "./components/code-ref/accordion";
 
@@ -57,7 +62,8 @@ export default function Home() {
             </button>
           </div>
           <div className="w-full lg:w-7/12 ">
-            <img
+           {/* eslint-desable */}
+            <img 
               className="w-full h-full"
               src="https://images.ctfassets.net/88a6qmzs2wdz/7zBHsyElF4x3Bo0PzWs8NS/aaeae132c5cb261b07c7972d3a1fbdc6/20220113_HomePageVisualUpdates_Home_Desktop_Final.png?h=395&q=90&w=670"
               alt="A group of People"
@@ -65,151 +71,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-      {/* <AccordionBasic /> */}
-      {/* ***************** Hero Sections-Insightful ==> 6 **************** */}
-      {/* <div id="accordionFlushExample">
-  <div
-    class="rounded-none border border-t-0 border-l-0 border-r-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
-    <h2 class="mb-0" id="flush-headingOne">
-      <button
-        class="group relative flex w-full items-center rounded-none border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
-        type="button"
-        data-te-collapse-init
-        data-te-target="#flush-collapseOne"
-        aria-expanded="false"
-        aria-controls="flush-collapseOne">
-        Accordion Item #1
-        <span
-          class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="h-6 w-6">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-          </svg>
-        </span>
-      </button>
-    </h2>
-    <div
-      id="flush-collapseOne"
-      class="!visible border-0"
-      data-te-collapse-item
-      data-te-collapse-show
-      aria-labelledby="flush-headingOne"
-      data-te-parent="#accordionFlushExample">
-      <div class="py-4 px-5">
-        Placeholder content for this accordion, which is intended to
-        demonstrate the
-        <code>.accordion-flush</code> class. This is the first item's
-        accordion body.
-      </div>
-    </div>
-  </div>
-  <div
-    class="rounded-none border border-l-0 border-r-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
-    <h2 class="mb-0" id="flush-headingTwo">
-      <button
-        class="group relative flex w-full items-center rounded-none border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
-        type="button"
-        data-te-collapse-init
-        data-te-collapse-collapsed
-        data-te-target="#flush-collapseTwo"
-        aria-expanded="false"
-        aria-controls="flush-collapseTwo">
-        Accordion Item #2
-        <span
-          class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="h-6 w-6">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-          </svg>
-        </span>
-      </button>
-    </h2>
-    <div
-      id="flush-collapseTwo"
-      class="!visible hidden border-0"
-      data-te-collapse-item
-      aria-labelledby="flush-headingTwo"
-      data-te-parent="#accordionFlushExample">
-      <div class="py-4 px-5">
-        Placeholder content for this accordion, which is intended to
-        demonstrate the
-        <code>.accordion-flush</code> class. This is the second item's
-        accordion body. Let's imagine this being filled with some actual
-        content.
-      </div>
-    </div>
-  </div>
-  <div
-    class="rounded-none border border-l-0 border-r-0 border-b-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
-    <h2 class="mb-0" id="flush-headingThree">
-      <button
-        class="group relative flex w-full items-center rounded-none border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
-        type="button"
-        data-te-collapse-init
-        data-te-collapse-collapsed
-        data-te-target="#flush-collapseThree"
-        aria-expanded="false"
-        aria-controls="flush-collapseThree">
-        Accordion Item #3
-        <span
-          class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="h-6 w-6">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-          </svg>
-        </span>
-      </button>
-    </h2>
-    <div
-      id="flush-collapseThree"
-      class="!visible hidden"
-      data-te-collapse-item
-      aria-labelledby="flush-headingThree"
-      data-te-parent="#accordionFlushExample">
-      <div class="py-4 px-5">
-        Placeholder content for this accordion, which is intended to
-        demonstrate the
-        <code>.accordion-flush</code> class. This is the third item's
-        accordion body. Nothing more exciting happening here in terms of
-        content, but just filling up the space to make it look, at least
-        at first glance, a bit more representative of how this would look
-        in a real-world application.
-      </div>
-    </div>
-  </div>
-</div> */}
       {/* ***************** Accurate Books ==> 2 **************** */}
       <div
         className="grid grid-cols-1 sm:grid-cols-1 py-16 xl:grid-cols-3 lg:flex "
         style={{ background: "#f7f8fa" }}
       >
         <div className="hidden lg:inline-block lg:pl-48">
+        {/* eslint-desable */}
           <img
             className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             src="https://images.ctfassets.net/88a6qmzs2wdz/4xjVaP4TqAYoBt3WVduqwW/b8a800151f09ffec2e70abcd5d9a2bbb/Frame_14795.png?h=237&q=90&w=170"
@@ -237,7 +105,9 @@ export default function Home() {
           </button>
         </div>
         <div className="mx-auto lg:pr-48">
-          <img
+        
+                {/* eslint-desable */}
+  <img
             className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             src="https://images.ctfassets.net/88a6qmzs2wdz/2P7hmuf49eigOK0WjNh0cr/776add60874a88d14370eb5a29342b32/Frame_14796.png?h=237&q=90&w=170"
             alt="App screenshot"
@@ -258,14 +128,13 @@ export default function Home() {
         <div className=" font-medium lg:w-4/5 lg:mx-auto lg:p-10 p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols lg:grid-cols-3 xl:grid-cols-3 gap-5 ">
           <div className=" md:flex-col md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
             <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
-            {/* <img className="w-full" src="" alt="Mountain"/> */}
-
             <div className=" py-4">
               <p className="catamaran text-base ">
                 Why should small businesses consider outsourcing Accounting &
                 Bookkeeping?
               </p>
               <p className=" catamaran text-xs flex">
+               {/* eslint-desable */}
                 <img
                   className=" w-[5rem] max-w-none mt-5 rounded-full bg-white/5 ring-1 ring-white/10"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/498EXiBd0rSp5S6OhQIrNO/bea6f40792bf6cd7fe9200c587419155/download.jpeg?h=86&q=90&w=86"
@@ -289,7 +158,8 @@ export default function Home() {
                 businesses?
               </p>
               <p className="catamaran text-xs flex">
-                <img
+              {/* eslint-desable */} 
+               <img
                   className=" w-[5rem] max-w-none mt-5 rounded-full bg-white/5 ring-1 ring-white/10"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/1DloogLwZhhbmtqxuhTcWw/df3fa64ee18890ab0aff70e1415bc09b/Testimonial_Dr-Bukky.png?h=86&q=90&w=86"
                   alt="App screenshot"
@@ -304,14 +174,13 @@ export default function Home() {
 
           <div className=" md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
             <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
-            {/* <img className="w-full" src="" alt="Mountain"/> */}
-
             <div className=" py-4">
               <p className="catamaran  text-base">
                 When choosing an outsourcing firm to do their books, what
                 factors should small businesses consider?
               </p>
               <p className="catamaran text-xs flex">
+                 {/* eslint-desable */}
                 <img
                   className=" w-[5rem] max-w-none mt-5 rounded-full bg-white/5 ring-1 ring-white/10"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/2vmIkgyTJv3CwYkblL3Ilk/3928a03e7f6399d1048a025c70d97f26/Gina-Downey.jpeg?h=86&q=90&w=86"
@@ -338,6 +207,7 @@ export default function Home() {
           <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl font-medium sm:text-4xl md:text-xl">
             What you get with Bookxpert.{" "}
           </h1>
+          {/* eslint-desable */}
           <img className="text-center mx-auto my-10" src="/Book.png" />
           <h3 className="PatuaOne lg:max-w-3xl lg:mx-auto tracking-wider text-3xl lg:text-3xl font-medium sm:text-4xl md:text-xl">
             Easy business management with tidy financials
@@ -358,6 +228,7 @@ export default function Home() {
       {/* ***************** Hero Sections-Insightful ==> 6 **************** */}
       <div className="flex  lg:flex-row flex-col-reverse justify-center md:py-12 md:px-6 gap-14 py-10  ">
         <div className=" lg:w-5/12">
+                 {/* eslint-desable */}
           <img
             className="h-full md:mx-auto"
             src="https://images.ctfassets.net/88a6qmzs2wdz/6i5t90xcqiIUMW5oX5fqcP/b8452255e4ce062957732537a283fe8b/2023_Homepage_VP_ExpertSupport.png?h=354&q=90&w=570"
@@ -405,6 +276,7 @@ export default function Home() {
           </div>
 
           <div className=" lg:w-5/12">
+                    {/* eslint-desable */}
             <img
               className="h-full md:mx-auto"
               src="https://images.ctfassets.net/88a6qmzs2wdz/60YZfXjE7UU0IqBarEgYK4/22461e400c9b393e8833046dd8fbeda6/2023_Homepage_VP_FinancialReporting.png?h=354&q=90&w=570"
@@ -417,6 +289,7 @@ export default function Home() {
       {/* ***************** Hero Sections- Smooth Compliances  ==> 8**************** */}
       <div className="flex  lg:flex-row flex-col-reverse justify-center md:py-12 md:px-6 gap-14 py-10  ">
         <div className=" lg:w-5/12 ">
+                  {/* eslint-desable */}
           <img
             className="h-full md:mx-auto"
             src="https://images.ctfassets.net/88a6qmzs2wdz/6i5t90xcqiIUMW5oX5fqcP/b8452255e4ce062957732537a283fe8b/2023_Homepage_VP_ExpertSupport.png?h=354&q=90&w=570"
@@ -455,6 +328,7 @@ export default function Home() {
         style={{ background: "#f7f8fa" }}
       >
         <div className="hidden lg:inline-block lg:pl-48">
+                  {/* eslint-desable */}
           <img
             className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             src="https://images.ctfassets.net/88a6qmzs2wdz/1dLJZFfakIm6ze6ySJAzRS/19329d5a2f956af08c6ec75c15fdf218/TaxHub-Left.png?h=236&q=90&w=170"
@@ -481,6 +355,7 @@ export default function Home() {
           If you're several years behind on business taxes, get caught up and filed with Bench Retro.          </p>
         </div>
         <div className="mx-auto lg:pr-48">
+                  {/* eslint-desable */}
           <img
             className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             src="https://images.ctfassets.net/88a6qmzs2wdz/6tia5roEXDz2daFkUPIFMt/524a4ce1da60bbe68330d41cea3f0f3f/TaxHub-Right.png?h=235&q=90&w=170"
@@ -504,6 +379,7 @@ export default function Home() {
           <div className="w-3/4 mx-auto md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
             <div className=" py-4">
               <div className="h-full   overflow-hidden">
+                        {/* eslint-desable */}
                 <img
                   className="lg:h-48 md:hidden lg:block w-full object-cover object-center"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/2v3J5YNdud9NcKqGroidGE/922b6535d87717d0e9579f959b39beb2/BenchBlog_TaxTips_17BigTaxDeductions.png?h=255&q=90&w=270"
@@ -546,6 +422,7 @@ export default function Home() {
             <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
             <div className=" py-4">
               <div className="h-full   overflow-hidden">
+                        {/* eslint-desable */}
                 <img
                   className="lg:h-48 md:hidden lg:block w-full object-cover object-center"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/2jaEUtWACoVyDdRGmWCLaN/6c5da6d1d352948f8378f2f9b145c177/BenchBlog_Top12Qs.png?h=255&q=90&w=270"
@@ -617,6 +494,7 @@ export default function Home() {
             <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
             <div className=" py-4">
               <div className="h-full  overflow-hidden">
+                        {/* eslint-desable */}
                 <img
                   className="lg:h-48 md:hidden lg:block w-full object-cover object-center"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/7Eu1demGJF7dvPI3H67Fv3/05d650cb773d41c921c1313657aca20a/BenchBlog_TaxTips_10Steps.png?h=255&q=90&w=270"
@@ -666,6 +544,7 @@ export default function Home() {
         style={{ background: "#062d60" }}
       >
         <div className="hidden  lg:inline-block lg:pl-52">
+                  {/* eslint-desable */}
           <img
             className="w-[10rem] max-w-none rounded-md"
             src="https://images.ctfassets.net/88a6qmzs2wdz/2e2TsIsGLaRNV65XbCPjNo/38bdefa478997663bad0f94e1be40529/Artboard_Copy.png?h=345&q=90&w=170"
@@ -691,7 +570,8 @@ export default function Home() {
         </div>
 
         <div className="hidden lg:block lg:pr-52">
-          <img
+         {/* eslint-desable */}
+          <img 
             className=" w-[10rem] max-w-none rounded-md"
             src="https://images.ctfassets.net/88a6qmzs2wdz/5BGb5uU22ZJAh7y63UZDvH/4109e19e0f4ba46d442ff27ed5c8fa2f/Artboard.png?h=345&q=90&w=170"
             alt="App screenshot"
