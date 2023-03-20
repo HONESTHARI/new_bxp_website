@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import Link from "next/link";
 // import Diamond from '../../assets/linux_logo.jpg';
 // import Bxpmage from 'images/New_bxp_imgs/BEEPRO_IMG/BXPLOGO'
 import { Popover, Transition } from "@headlessui/react";
@@ -142,7 +143,7 @@ export default function Navbar() {
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {solutions.map((item) => (
-                            <a
+                            <Link
                               key={item.name}
                               href={item.href}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
@@ -159,13 +160,13 @@ export default function Navbar() {
                                   {item.description}
                                 </p>
                               </div>
-                            </a>
+                            </Link>
                           ))}
                         </div>
                         <div className="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                           {callsToAction.map((item) => (
                             <div key={item.name} className="flow-root">
-                              <a
+                              <Link
                                 href={item.href}
                                 className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100"
                               >
@@ -174,7 +175,7 @@ export default function Navbar() {
                                   aria-hidden="true"
                                 />
                                 <span className="ml-3">{item.name}</span>
-                              </a>
+                              </Link>
                             </div>
                           ))}
                         </div>
@@ -185,26 +186,26 @@ export default function Navbar() {
               )}
             </Popover>
 
-            <a
+            <Link
               href="/"
               className="text-base font-medium text-white hover:text-gray-900"
             >
               Home
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/aboutus"
               className="text-base font-medium text-white hover:text-gray-900"
             >
               About Us
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/careers"
               className="text-base font-medium text-white hover:text-gray-900"
             >
               Careers
-            </a>
+            </Link>
           </Popover.Group>
 
           <div className="-my-2 -mr-2 md:hidden">
@@ -215,29 +216,29 @@ export default function Navbar() {
           </div>
 
           <div className="flex justify-center text-center mx-auto   lg:pl-36 lg:w-0 lg:flex-1 ">
-            <a href="#">
+            <Link href="#">
               <span className="sr-only">Your Company</span>
               <img
                 className="h-10 w-auto sm:h-10"
                 src="/white_bxp_logo1.png"
                 alt="bxplogo"
               />
-            </a>
+            </Link>
           </div>
 
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-            <a
+            <Link
               href="#"
               className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
             >
               Sign in
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-white px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-600"
             >
               Book A Demo
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -276,7 +277,7 @@ export default function Navbar() {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {solutions.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
                       href={item.href}
                       className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
@@ -288,56 +289,56 @@ export default function Navbar() {
                       <span className="ml-3 text-base font-medium text-gray-900">
                         {item.name}
                       </span>
-                    </a>
+                    </Link>
                   ))}
                 </nav>
               </div>
             </div>
             <div className="space-y-6 py-6 px-5">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a
+                <Link
                   href="/"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Home
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="../components/aboutus"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   About Us
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="../Careers"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Careers
-                </a>
+                </Link>
 
                 {resources.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     className="text-base font-medium text-gray-900 hover:text-gray-700"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
               <div>
-                <a
+                <Link
                   href="#"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                 >
                   Sign up
-                </a>
+                </Link>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{" "}
-                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                  <Link href="#" className="text-indigo-600 hover:text-indigo-500">
                     Book A Demo
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>
