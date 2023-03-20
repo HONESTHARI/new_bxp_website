@@ -1,5 +1,6 @@
 //import { ChevronDownIcon } from '@heroicons/react/20/solid'
 // import Jobs from "./jobs";
+
 const people = [
   {
     name: "Bookxpert-Technical Manager",

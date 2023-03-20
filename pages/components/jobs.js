@@ -1,12 +1,8 @@
 import React from "react";
 
-import Navbar from "./code-ref/spl_nav";
-import Footer from "./code-ref/footer";
-
 export default function Jobs() {
   return (
     <>
-      <Navbar />
 
       <div className="pt-20">
         {/* ***************** SECTION ==> 1 **************** */}
@@ -182,8 +178,6 @@ export default function Jobs() {
 
         {/* ***************** SECTION ==> 3 **************** */}
       </div>
-
-      <Footer />
     </>
   );
 }
