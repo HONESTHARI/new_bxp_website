@@ -14,17 +14,12 @@ const stats = [
             <div className="text-center">
               <h1 className="PatuaOne tracking-wider text-3xl font-medium  text-gray-900 sm:text-4xl">
              Symbolic representation of company facts
-             
               </h1>
-              <p className="catamaran mt-4 text-lg leading-8 text-gray-600 font-medium">
-              {/* Here we will place facts about our company in a symbolic representation like GOI Recognized */}
-              A GOI Recognized Accounting firm 
-              </p>
             </div>
             <dl className="mt-16 grid grid-cols-1  overflow-hidden rounded-2xl text-center sm:grid-cols-1 lg:grid-cols-3">
               {stats.map((stat) => (
                 <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
-                  <dt className="text-sm leading-6 text-gray-600 catamaran font-medium text-center">{stat.name}</dt>
+                  <dt className="text-sm leading-10  text-gray-600 catamaran font-medium text-center">{stat.name}</dt>
                   <dd className="order-first text-5xl tracking-tight text-gray-900 PTSerif font-medium">{stat.value}</dd>
                 </div>
               ))}

@@ -22,9 +22,8 @@ export default function AboutUs() {
             />
           </div>
           <div className="text-center lg:px-10 text-black lg:max-w-4xl lg:mx-auto pt-36">
-            <h1 className="PatuaOne  tracking-wider text-3xl lg:text-4xl lg:px-0 px-10 font-medium sm:text-4xl md:text-xl">
+            <h1 className="PatuaOne tracking-wider text-3xl lg:text-4xl lg:leading-10 p-8  font-medium text_color1">
               Accounting And Bookkeeping Services
-              <br className="hidden lg:block md:hidden" />
             </h1>
           </div>
 
@@ -44,6 +43,7 @@ export default function AboutUs() {
             />
           </div>
         </div>
+
         {/* ***************** Quick financial ==> 2 **************** */}
         <div className=" items-center justify-center h-auto  bg-fixed bg-center bg-cover ">
           <div class="flex py-20" style={{ background: "#f6f6f6" }}>
@@ -139,9 +139,8 @@ export default function AboutUs() {
         </div>
 
         {/* ***************** Where Are We ==> 6 **************** */}
-
         <div
-          className="py-32 text-center mx-auto justify-center"
+          className="lg:py-32 py-20 text-center mx-auto justify-center"
           style={{ background: "#f6f6f6" }}
         >
           <div className="text-center text-black">
@@ -159,9 +158,9 @@ export default function AboutUs() {
               Learn More
             </button>
           </div>
-          <div className="lg:w-9/12 lg:mx-auto ">
+          <div className="lg:w-9/12 lg:mx-auto">
             <img
-              className="lg:w-full h-full w-10/12 mx-auto" 
+              className="lg:w-full h-full w-10/12 mx-auto"
               src="https://images.ctfassets.net/88a6qmzs2wdz/csiEOXNxluaWasqasQ0YA/d903bcd6b18e6aadcb6a4c9fdb0cac9b/Business-types.png?h=87&q=90&w=1170"
               alt="A group of People"
             />
@@ -172,7 +171,7 @@ export default function AboutUs() {
         <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
           <div className="flex flex-col lg:flex-row justify-center gap-8 py-20">
             <div className="heading w-full text-xl lg:w-5/12 flex flex-col justify-center">
-              <h1 className=" PatuaOne tracking-wider text-xl lg:text-2xl  font-medium py-5 leading-9 text-gray-800">
+              <h1 className=" PatuaOne tracking-wider text-xl lg:text-3xl  font-medium py-5 leading-9 text-gray-800">
                 {" "}
                 Our Expertise
               </h1>
@@ -184,6 +183,7 @@ export default function AboutUs() {
                 of rush & delays
               </p>
             </div>
+
             <div className="lg:w-5/12 text-base">
               <p>
                 Financial mastery is the idea that everyone, regardless of
@@ -208,11 +208,11 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* ***************** Our principles ==> 5**************** */}
+        {/* ***************** Our principles ==> 8**************** */}
 
         <div className=" text-center mx-auto justify-center">
           <div className="text-center text-black">
-            <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl font-medium sm:text-4xl md:text-xl">
+            <h1 className="PatuaOne tracking-wider text-xl lg:text-3xl font-medium sm:text-4xl md:text-xl">
               Our principles{" "}
             </h1>
 
@@ -235,7 +235,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* _________________________________________ */}
+        {/* __________________Upscale your ==> 9_______________________ */}
         <div
           className="max-w-none pt-10 items-center justify-center h-auto bg-white bg-fixed bg-center bg-cover "
           style={{ background: "#f6f6f6" }}
@@ -362,6 +362,8 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
+
+        {/*  */}
       </div>
     </>
   );
