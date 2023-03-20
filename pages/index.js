@@ -2,12 +2,6 @@
 import React from "react";
 import Stats from "./components/stats";
 
-
-
-
-//import Accordion from "./components/accordion";
-import AccordionBasic from "./components/code-ref/accordion";
-
 const logos = [
   {
     name: "Transistor",
@@ -532,8 +526,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ***************** Accordion ==> 11 **************** */}
-      {/* <Accordion/> */}
+     
 
       {/* ***************** With A Wide ==> 12 **************** */}
       <div
