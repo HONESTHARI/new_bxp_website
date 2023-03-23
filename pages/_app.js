@@ -11,7 +11,8 @@ export default function App({ Component, pageProps }) {
         <title>Bxp_Website</title>
         <meta name="description" content="Your Accounting Partner" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/Book1.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
       </Head>
       <Navbar />

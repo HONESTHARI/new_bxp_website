@@ -15,7 +15,7 @@ export default function Jobs() {
             <h1 className="text-3xl mb-10 font-bold text-gray-900">
               Bookkeeping Associate - Future Opportunities
             </h1>
-            <a href="../Careers" className="pt-20 text-sm text-gray-700">
+            <a href="../careers" className="pt-20 text-sm text-gray-700">
               ← All Job Openings
             </a>
           </div>
@@ -130,8 +130,9 @@ export default function Jobs() {
               <hr />
             </div>
             <div className="mt-10  items-center justify-center gap-x-6 lg:justify-start">
-              <button class=" m-5 bg-white border-blue-800 text-blue-800  hover:bg-blue-800 font-semibold hover:text-white py-2 px-4 border  hover:border-transparent rounded">
-                <a href="http://bookxpert.co/"> Apply Now</a>
+            
+              <button className="my-5 py-2 px-3 hover:rounded-bl-2xl hover:rounded-tr-2xl  bg-transparent hover:bg-blue-900 text-blue-900 font-medium text-base hover:text-white  border border-blue-900 hover:border-transparent rounded">
+              <a href="http://bookxpert.co/"> Apply Now</a>
               </button>
             </div>
           </div>
@@ -143,40 +144,14 @@ export default function Jobs() {
                 <h2 className="text-3xl  font-bold tracking-tight">
                   Looking for something different?
                 </h2>
-
                 <p className="mt-3 mb-5">Take a look at what else is open.</p>
-                <a href="../Careers" className="pt-10 text-sm text-gray-700">
+                <a href="../careers" className="pt-10 text-sm text-gray-700">
                   ← All Job Openings
                 </a>
-
-                {/* <button class=" ml-20 mt-5 bg-white border-blue-800 text-blue-800  hover:bg-blue-800 font-semibold hover:text-white py-2 px-4 border  hover:border-transparent rounded">
-                  <a href="http://bookxpert.co/"> Set Alert</a>
-                </button>
-               */}
-                {/* <button class=" m-5 ml-20  hover:bg-blue-800 text-blue-800  border-blue-800  font-semibold hover:text-     py-2 px-4 border hover:border-transparent rounded">
-                  <a href="http://bookxpert.co/"> 
-                  {solutions.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="-m-3 flex items-center rounded-md p-3  hover:text-white text-blue-800"
-                      >
-                        <item.icon
-                          className="h-6 w-6 flex-shrink-0"
-                          aria-hidden="true"
-                        />
-                        <span className="ml-3 text-base font-medium">
-                          {item.name}
-                        </span>
-                      </a>
-                    ))}</a>
-                </button> */}
               </div>
             </div>
           </div>
         </div>
-
-        {/* ***************** SECTION ==> 3 **************** */}
       </div>
     </>
   );

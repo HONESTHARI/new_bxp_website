@@ -1,4 +1,6 @@
 import React from "react";
+// import Link from "next/link";
+//import Image from "next/image";
 // import Stats from "./components/stats";
 import StatsAbout from "./components/stats_aboutus";
 export default function AboutUs() {
@@ -15,7 +17,7 @@ export default function AboutUs() {
         >
           <div className="md:hidden lg:inline-block  lg:pl-36">
             <img
-              className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+              className="w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
               src="https://images.ctfassets.net/88a6qmzs2wdz/6o1A25XqFyywCwQKSsgGYw/13b6b935c32b48eacda0b036389510bd/Bench-Bookkeeping_About-L_copy.png?h=383&q=90&w=270"
               alt="App screenshot"
               style={{ height: "380px", width: "270px" }}
@@ -86,6 +88,7 @@ export default function AboutUs() {
               <img
                 className="h-full md:mx-auto md:inline md:w-full"
                 src="https://images.ctfassets.net/88a6qmzs2wdz/3Uyb7jbHK8oS8EYImEOOuc/5b18cab4fb3bbfb75e002f72ae70c72a/Robson_Office_8447_1600px.jpg?h=380&q=90&w=570"
+                alt="111"
               />
             </div>
           </div>
@@ -203,7 +206,7 @@ export default function AboutUs() {
           <div className="lg:w-11/12 mx-auto lg:h-80 ">
             <img
               className="h-full md:mx-auto md:inline md:w-full"
-              src="https://images.ctfassets.net/88a6qmzs2wdz/6BQpvzry7e0CE2gq4oqkOS/5c166b1862f5df46da40064c8a1a2431/Bench-Accounting_Benchmates.jpg?h=437&q=90&w=1170"
+              src="https://images.ctfassets.net/88a6qmzs2wdz/6BQpvzry7e0CE2gq4oqkOS/5c166b1862f5df46da40064c8a1a2431/Bench-Accounting_Benchmates.jpg?h=437&q=90&w=1170" alt="222"
             />
           </div>
         </div>
@@ -256,8 +259,6 @@ export default function AboutUs() {
           <div class="font-medium lg:w-4/5 md:w-2/5 md:mx-auto lg:mx-auto lg:p-10 p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols lg:grid-cols-3 xl:grid-cols-3 gap-5 ">
             <div class="dark:border-gray-700 dark:bg-gray-800 ">
               <div className="w-x h-x  lg:w-x2 lg:h-y2"></div>
-              {/* <img class="w-full" src="" alt="Mountain"/> */}
-
               <div class="py-4">
                 <div class="h-full md:h-auto  overflow-hidden">
                   <img
@@ -269,53 +270,6 @@ export default function AboutUs() {
                     <h1 class="PatuaOne tracking-wider text_color text-center mx-auto text-md title-font font-medium text-gray-400 mb-1">
                       Careers
                     </h1>
-
-                    {/* <div class="flex items-center flex-wrap ">
-                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
-                      Learn More
-                      <svg
-                        class="w-4 h-4 ml-2"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
-                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg
-                        class="w-4 h-4 mr-1"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                      </svg>
-                      1.2K
-                    </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg
-                        class="w-4 h-4 mr-1"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>
-                      6
-                    </span>
-                  </div> */}
                   </div>
                 </div>
               </div>
@@ -323,8 +277,6 @@ export default function AboutUs() {
 
             <div class="md:flex-row md:max-w-xl ">
               <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
-              {/* <img class="w-full" src="" alt="Mountain"/> */}
-
               <div class=" py-4">
                 <div class="h-full overflow-hidden">
                   <img
@@ -343,8 +295,6 @@ export default function AboutUs() {
 
             <div class="md:flex-row md:max-w-xl dark:bg-gray-800 ">
               <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
-              {/* <img class="w-full" src="" alt="Mountain"/> */}
-
               <div class=" py-4">
                 <div class="h-full  overflow-hidden">
                   <img

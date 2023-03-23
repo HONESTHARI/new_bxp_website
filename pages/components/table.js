@@ -6,7 +6,7 @@ const people = [
     name: "Bookxpert-Technical Manager",
     title: "Guntur, Hyderabad, Bangalore",
     role: "Technical Manager",
-    link:"./Jobs",
+    link:"./components/jobs",
   },
   // More people...
 

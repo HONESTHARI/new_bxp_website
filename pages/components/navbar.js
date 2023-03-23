@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Link from "next/link";
+import Image from "next/image";
 // import Diamond from '../../assets/linux_logo.jpg';
 // import Bxpmage from 'images/New_bxp_imgs/BEEPRO_IMG/BXPLOGO'
 import { Popover, Transition } from "@headlessui/react";
@@ -218,10 +219,12 @@ export default function Navbar() {
           <div className="flex justify-center text-center mx-auto   lg:pl-36 lg:w-0 lg:flex-1 ">
             <Link href="#">
               <span className="sr-only">Your Company</span>
-              <img
+              <Image
                 className="h-10 w-auto sm:h-10"
                 src="/white_bxp_logo1.png"
-                alt="bxplogo"
+                width={200}
+                height={200}
+                alt="logo"
               />
             </Link>
           </div>
@@ -267,7 +270,7 @@ export default function Navbar() {
                 </div>
 
                 <div>
-                  <img
+                  <Image
                     className="h-8 w-auto"
                     src="/bxplogo.png"
                     alt="Your Company"

@@ -15,13 +15,6 @@ module.exports = {
   theme: {
     extend: {
 
-      // fontFamily: {
-
-      //   catamaran : ['"Catamaran"', ...defaultTheme.fontFamily.sans  ],
-      //   circular :['"Flow Circular"','cursive' ]
-      // }
-
-
     },
   },
   plugins: [],
