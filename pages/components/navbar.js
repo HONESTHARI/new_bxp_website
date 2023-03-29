@@ -115,22 +115,7 @@ export default function Navbar() {
             <Popover className="relative">
               {({ open }) => (
                 <>
-                  {/* <Popover.Button
-                    className={classNames(
-                      open ? "text-gray-900" : "text-gray-500",
-                      "group inline-flex items-center rounded-md bg-transparent text-white font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                    )}
-                  >
-                    <span className="text-white">Services</span>
-                    <ChevronDownIcon
-                      className={classNames(
-                        open ? "text-gray-600" : "text-gray-400",
-                        "ml-2 h-5 w-5 group-hover:text-gray-500 text-white"
-                      )}
-                      aria-hidden="true"
-                    />
-                  </Popover.Button> */}
-
+                  
                   <Transition
                     as={Fragment}
                     enter="transition ease-out duration-200"
@@ -206,6 +191,20 @@ export default function Navbar() {
               className="text-base font-medium text-white hover:text-gray-900"
             >
               Careers
+            </Link>
+
+            <Link
+              href="/services1"
+              className="text-base font-medium text-white hover:text-gray-900"
+            >
+              Services
+            </Link>
+
+            <Link
+              href="/services2"
+              className="text-base font-medium text-white hover:text-gray-900"
+            >
+              Services2
             </Link>
           </Popover.Group>
 
@@ -314,10 +313,24 @@ export default function Navbar() {
                 </Link>
 
                 <Link
-                  href="../Careers"
+                  href="../careers"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Careers
+                </Link>
+
+                <Link
+                  href="/services1"
+                  className="text-base font-medium text-gray-900 hover:text-gray-700"
+                >
+                  Services
+                </Link>
+
+                <Link
+                  href="/services2"
+                  className="text-base font-medium text-gray-900 hover:text-gray-700"
+                >
+                  services2
                 </Link>
 
                 {resources.map((item) => (

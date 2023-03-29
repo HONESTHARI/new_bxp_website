@@ -357,7 +357,6 @@ export default function Home() {
         </div>
       </div>
 
-
       {/* ***************** Explore over ==> 10 **************** */}
       <div className="max-w-none mb-10 pt-10 items-center justify-center h-auto bg-white bg-fixed bg-center bg-cover ">
         <div>
@@ -526,8 +525,6 @@ export default function Home() {
         </div>
       </div>
 
-     
-
       {/* ***************** With A Wide ==> 12 **************** */}
       <div
         className="grid grid-cols-1 sm:grid-cols-1 lg:flex xl:grid-cols-3 items-center justify-center"
@@ -570,6 +567,9 @@ export default function Home() {
           />
         </div>
       </div>
+
+
+      
     </div>
   );
 }
