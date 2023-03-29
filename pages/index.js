@@ -41,7 +41,7 @@ export default function Home() {
           <div className="w-full leading-10 lg:w-5/12 lg:ml-16 pb-16 lg:text-left  text-center ">
             <h1 className="PatuaOne tracking-wider pb-5 text-2xl lg:text-5xl md:text-2xl md:pb-5  md:max-w-xs lg:max-w-lg text-center  md:text-center lg:text-left md:mx-auto text-white font-medium lg:pb-8  ">
               {" "}
-              Ditch the delays
+             This is new changes
               <br className="hidden lg:block md:hidden" /> with DIY accounting,
               <br className="hidden lg:block md:hidden" /> be compliance ready
             </h1>
