@@ -36,12 +36,12 @@ export default function Home() {
       {/* ***************** Ditch The ==> 1 **************** */}
       <div id="Ditch"
         className=" Ditch xl:container 2xl:mx-auto  py-24 lg:py-24 lg:px-20 md:py-20 md:px-6 px-4 text-black"
-        //style={{ background: "#1011e8a1"}}
-        // #1011e8bf
+      //style={{ background: "#1011e8a1"}}
+        // #1011e8bf ; #4b4dee
       >
         <div className=" mx-auto justify-center">
           <div className="w-full leading-10 text-center ">
-            <h1 className="PatuaOne tracking-wider text-2xl lg:text-3xl md:text-2xl text-white  md:max-w-xs lg:max-w-lg text-center  md:text-center md:mx-auto font-medium ">
+            <h1 className="PatuaOne tracking-wider text-2xl lg:text-3xl md:text-2xl text-blue-800  md:max-w-xs lg:max-w-lg text-center  md:text-center md:mx-auto font-medium ">
               {" "}
               Ditch the delays with DIY
               <br className="hidden lg:block md:hidden" /> accounting, be
@@ -49,7 +49,7 @@ export default function Home() {
               {/* <br className="hidden lg:block md:hidden" />  */}
             </h1>
 
-            <p className="catamarantext-base font-normal py-5 text-center text-white" >
+            <p className="catamarantext-base font-normal py-5 text-center text-black" >
             {/* style={{'color':'#23184299'}}> */}
               Do it yourself accounting can hamper with your finances. Let
               Bookxpert handle your accounting by delivering accurate and timely
@@ -57,17 +57,11 @@ export default function Home() {
             </p>
             <Cards />
 
-            <button className="my-5 p-0 mt-10 text-center mx-auto text-white hover:rounded-bl-2xl hover:rounded-tr-2xl px-3 bg-transparent border border-white hover:bg-white font-medium hover:text-blue-500 hover:border-white rounded">
+            <button className="my-5 p-0 mt-10 text-center mx-auto text-blue-800  hover:rounded-bl-2xl hover:rounded-tr-2xl px-3 bg-transparent border border-blue-800 hover:bg-blue-800 font-medium hover:text-white hover:border-white rounded">
               Book A Free Consultation
             </button>
           </div>
-          {/* <div className="w-full lg:w-10/12 pt-10  -mb-24 mx-auto text-center">
-            <img
-              className="w-full h-full"
-              src="https://assets-global.website-files.com/615f415173b71a5211e28de7/6261b5e68f9bf74d376a9e1a_decoration-p-1600.png"
-              alt="A group of People"
-            />
-          </div> */}
+         
         </div>
       </div>
       {/* ***************** Accurate Books ==> 2 **************** */}

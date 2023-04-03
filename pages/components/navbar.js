@@ -204,6 +204,14 @@ export default function Navbar() {
               Careers
             </Link>
 
+
+
+            <Link
+                  href="../blog"
+                  className="text-base font-medium text-gray-900 hover:text-gray-700"
+                >
+                  Blog
+                </Link>
           </Popover.Group>
 
           <div className="-my-2 -mr-2 md:hidden">
@@ -309,6 +317,15 @@ export default function Navbar() {
                 >
                   Careers
                 </Link>
+
+
+                <Link
+                  href="../Block"
+                  className="text-base font-medium text-gray-900 hover:text-gray-700"
+                >
+                Block
+                </Link>
+
 
                 {/* <Link
                   href="/services1"
