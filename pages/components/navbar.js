@@ -1,8 +1,6 @@
 import { Fragment } from "react";
 import Link from "next/link";
 import Image from "next/image";
-// import Diamond from '../../assets/linux_logo.jpg';
-// import Bxpmage from 'images/New_bxp_imgs/BEEPRO_IMG/BXPLOGO'
 import { Popover, Transition } from "@headlessui/react";
 import {
   ArrowPathIcon,
@@ -108,14 +106,27 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Popover className="fixed w-full nav " style={{ background: "#062d60" }}>
+    <Popover className="fixed w-full nav bg-white justify-around  shadow-[4.0px_4.0px_4.0px_rgba(0,0,0,0.38)]">
       <div className="mx-auto  px-6">
         <div className="flex items-center justify-between  py-6 md:justify-start md:space-x-10">
+         
+        <div className="flex justify-center text-center mx-auto lg:w-0 lg:flex-1 ">
+            <Link href="#">
+              <span className="sr-only">Your Company</span>
+              <Image
+                className="h-10 w-auto sm:h-10"
+                src="/bxp_logo2.png"
+                width={200}
+                height={200}
+                alt="logo"/>
+            </Link>
+          </div>
+         
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
             <Popover className="relative">
               {({ open }) => (
                 <>
-                  
+
                   <Transition
                     as={Fragment}
                     enter="transition ease-out duration-200"
@@ -174,72 +185,47 @@ export default function Navbar() {
 
             <Link
               href="/"
-              className="text-base font-medium text-white hover:text-gray-900"
+              className="text-base font-medium hover:text-gray-900"
             >
               Home
             </Link>
 
             <Link
               href="/aboutus"
-              className="text-base font-medium text-white hover:text-gray-900"
+              className="text-base font-medium hover:text-gray-900"
             >
               About Us
             </Link>
 
             <Link
               href="/careers"
-              className="text-base font-medium text-white hover:text-gray-900"
+              className="text-base font-medium hover:text-gray-900"
             >
               Careers
             </Link>
 
-            <Link
-              href="/services1"
-              className="text-base font-medium text-white hover:text-gray-900"
-            >
-              Services
-            </Link>
-
-            <Link
-              href="/services2"
-              className="text-base font-medium text-white hover:text-gray-900"
-            >
-              Services2
-            </Link>
           </Popover.Group>
 
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md  p-2 text-white hover:bg-gray-100 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <Popover.Button className="inline-flex items-center justify-center rounded-md  p-2 hover:bg-gray-100 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
-          </div>
-
-          <div className="flex justify-center text-center mx-auto   lg:pl-36 lg:w-0 lg:flex-1 ">
-            <Link href="#">
-              <span className="sr-only">Your Company</span>
-              <Image
-                className="h-10 w-auto sm:h-10"
-                src="/white_bxp_logo1.png"
-                width={200}
-                height={200}
-                alt="logo"
-              />
-            </Link>
-          </div>
+          </div>       
 
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
             <Link
               href="#"
-              className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
-            >
-              Sign in
+              className="lg:mx-5 inline-flex items-center hover:rounded-bl-2xl hover:rounded-tr-2xl justify-center whitespace-nowrap rounded-md border border-white px-4 py-2 text-base font-medium   bg-blue-800 text-white shadow-sm hover:bg-white hover:border-blue-800 hover:text-blue-800"
+          >
+              Book A Demo
             </Link>
+
             <Link
               href="#"
-              className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-white px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-600"
-            >
-              Book A Demo
+              className="lg:mx-5 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-none px-4 py-2 text-base font-medium hover:text-blue-800 shadow-sm "
+           style={{'background-color':'#2318420d'}} >
+            Sign In
             </Link>
           </div>
         </div>
@@ -261,6 +247,7 @@ export default function Navbar() {
           <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
+
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Close menu</span>
@@ -271,11 +258,15 @@ export default function Navbar() {
                 <div>
                   <Image
                     className="h-8 w-auto"
-                    src="/bxplogo.png"
+                    src="/bxp_logo2.png"
                     alt="Your Company"
+                    width={200}
+                    height={200}
                   />
                 </div>
               </div>
+
+
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {solutions.map((item) => (
@@ -319,7 +310,7 @@ export default function Navbar() {
                   Careers
                 </Link>
 
-                <Link
+                {/* <Link
                   href="/services1"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
@@ -331,7 +322,7 @@ export default function Navbar() {
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   services2
-                </Link>
+                </Link> */}
 
                 {resources.map((item) => (
                   <Link
@@ -346,7 +337,7 @@ export default function Navbar() {
               <div>
                 <Link
                   href="#"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium  shadow-sm hover:bg-indigo-700"
                 >
                   Sign up
                 </Link>

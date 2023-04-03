@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React from "react";
 import Stats from "./components/stats";
+import Cards from "./components/cards";
 
 const logos = [
   {
@@ -33,45 +34,49 @@ export default function Home() {
   return (
     <div className="pt-20 items-center justify-center h-auto bg-white  bg-fixed bg-center bg-cover ">
       {/* ***************** Ditch The ==> 1 **************** */}
-      <div
-        className="xl:container 2xl:mx-auto  py-24 lg:py-24 lg:px-20 md:py-20 md:px-6  px-4 text-white"
-        style={{ background: "#062d60" }}
+      <div id="Ditch"
+        className=" Ditch xl:container 2xl:mx-auto  py-24 lg:py-24 lg:px-20 md:py-20 md:px-6 px-4 text-black"
+        //style={{ background: "#1011e8a1"}}
+        // #1011e8bf
       >
-        <div className="flex flex-col lg:flex-row justify-center px-8 ">
-          <div className="w-full leading-10 lg:w-5/12 lg:ml-16 pb-16 lg:text-left  text-center ">
-            <h1 className="PatuaOne tracking-wider pb-5 text-2xl lg:text-5xl md:text-2xl md:pb-5  md:max-w-xs lg:max-w-lg text-center  md:text-center lg:text-left md:mx-auto text-white font-medium lg:pb-8  ">
+        <div className=" mx-auto justify-center">
+          <div className="w-full leading-10 text-center ">
+            <h1 className="PatuaOne tracking-wider text-2xl lg:text-3xl md:text-2xl text-white  md:max-w-xs lg:max-w-lg text-center  md:text-center md:mx-auto font-medium ">
               {" "}
-             This is new changes
-              <br className="hidden lg:block md:hidden" /> with DIY accounting,
-              <br className="hidden lg:block md:hidden" /> be compliance ready
+              Ditch the delays with DIY
+              <br className="hidden lg:block md:hidden" /> accounting, be
+              compliance ready
+              {/* <br className="hidden lg:block md:hidden" />  */}
             </h1>
 
-            <p className="catamaran text-base font-normal  text-center lg:text-left   text-white">
+            <p className="catamarantext-base font-normal py-5 text-center text-white" >
+            {/* style={{'color':'#23184299'}}> */}
               Do it yourself accounting can hamper with your finances. Let
               Bookxpert handle your accounting by delivering accurate and timely
               financials
             </p>
-            <button className="my-5 p-0 hover:rounded-bl-2xl hover:rounded-tr-2xl px-3 bg-transparent items-center mx-auto text-white border  border-white hover:bg-white font-medium  hover:text-blue-800 hover:border-transparent rounded">
+            <Cards />
+
+            <button className="my-5 p-0 mt-10 text-center mx-auto text-white hover:rounded-bl-2xl hover:rounded-tr-2xl px-3 bg-transparent border border-white hover:bg-white font-medium hover:text-blue-500 hover:border-white rounded">
               Book A Free Consultation
             </button>
           </div>
-          <div className="w-full lg:w-7/12 ">
-           {/* eslint-desable */}
-            <img 
+          {/* <div className="w-full lg:w-10/12 pt-10  -mb-24 mx-auto text-center">
+            <img
               className="w-full h-full"
-              src="https://images.ctfassets.net/88a6qmzs2wdz/7zBHsyElF4x3Bo0PzWs8NS/aaeae132c5cb261b07c7972d3a1fbdc6/20220113_HomePageVisualUpdates_Home_Desktop_Final.png?h=395&q=90&w=670"
+              src="https://assets-global.website-files.com/615f415173b71a5211e28de7/6261b5e68f9bf74d376a9e1a_decoration-p-1600.png"
               alt="A group of People"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       {/* ***************** Accurate Books ==> 2 **************** */}
       <div
-        className="grid grid-cols-1 sm:grid-cols-1 py-16 xl:grid-cols-3 lg:flex "
-        style={{ background: "#f7f8fa" }}
-      >
+        className="grid grid-cols-1 sm:grid-cols-1 py-24 xl:grid-cols-3 lg:flex  ">
+        {/* style={{ background: "#f7f8fa" }}
+      > */}
         <div className="hidden lg:inline-block lg:pl-48">
-        {/* eslint-desable */}
+          {/* eslint-desable */}
           <img
             className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             src="https://images.ctfassets.net/88a6qmzs2wdz/4xjVaP4TqAYoBt3WVduqwW/b8a800151f09ffec2e70abcd5d9a2bbb/Frame_14795.png?h=237&q=90&w=170"
@@ -81,9 +86,8 @@ export default function Home() {
           />
         </div>
         <div className=" text-center lg:px-0 text-black lg:max-w-4xl lg:mx-auto">
-          
-        <button className="my-5 py-0 mb-10 px-10 bg-transparent text-blue-900 font-medium text-base border border-blue-900   rounded-2xl">
-           LIMITED TIME OFFER
+          <button className="my-5 py-0 mb-10 px-10 bg-transparent text-blue-900 font-medium text-base border border-blue-900   rounded-2xl">
+            LIMITED TIME OFFER
           </button>
           <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl lg:px-0 px-10 font-medium sm:text-4xl md:text-xl">
             Accurate Books, no fines to pay
@@ -99,9 +103,7 @@ export default function Home() {
           </button>
         </div>
         <div className="mx-auto lg:pr-48">
-        
-                {/* eslint-desable */}
-  <img
+          <img
             className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             src="https://images.ctfassets.net/88a6qmzs2wdz/2P7hmuf49eigOK0WjNh0cr/776add60874a88d14370eb5a29342b32/Frame_14796.png?h=237&q=90&w=170"
             alt="App screenshot"
@@ -110,17 +112,20 @@ export default function Home() {
           />
         </div>
       </div>
-
-      {/* ***************** Timely Accounting Review ==> 3 **************** */}
-      <div className="max-w-none py-20 items-center justify-center h-auto  bg-white bg-fixed bg-center bg-cover ">
+      
+      {/* ******#fff2f4*********** Timely Accounting Review ==> 3 **************** */}
+      <div className="max-w-none py-20 items-center justify-center h-auto  bg-white bg-fixed bg-center bg-cover " style={{ background: "#1011e8a1" }}>
+      {/* #fff2f4 */}
         <div>
-          <h1 className="PatuaOne tracking-wider lg:max-w-5xl lg:mx-auto lg:text-3xl text-center font-medium lg:p-8 p-8 py-3">
+          <h1 className="PatuaOne tracking-wider text-white lg:max-w-5xl lg:mx-auto lg:text-3xl text-center font-medium lg:p-8 p-8 py-3" 
+          //  style={{ color: "#f44a64" }}
+           >
             Timely Accounting Services for Small Businesses & Auditors
           </h1>
         </div>
 
         <div className=" font-medium lg:w-4/5 lg:mx-auto lg:p-10 p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols lg:grid-cols-3 xl:grid-cols-3 gap-5 ">
-          <div className=" md:flex-col md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
+          <div className=" md:flex-col md:max-w-xl text-white ">
             <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
             <div className=" py-4">
               <p className="catamaran text-base ">
@@ -128,7 +133,7 @@ export default function Home() {
                 Bookkeeping?
               </p>
               <p className=" catamaran text-xs flex">
-               {/* eslint-desable */}
+                {/* eslint-desable */}
                 <img
                   className=" w-[5rem] max-w-none mt-5 rounded-full bg-white/5 ring-1 ring-white/10"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/498EXiBd0rSp5S6OhQIrNO/bea6f40792bf6cd7fe9200c587419155/download.jpeg?h=86&q=90&w=86"
@@ -136,15 +141,16 @@ export default function Home() {
                   width={1920}
                   height={1080}
                 />
-                <b className="text-blue-400  ml-10 mr-0  mt-10">
-                  ALBERT LAMONT
+                <b className="ml-10 mr-1  mt-10">
+                  ALBERT LAMONT  
                 </b>
-                <span className="mt-10"> CEO, SWEATCAST</span>
+                <span className="mt-10">   CEO, SWEATCAST</span>
               </p>
             </div>
           </div>
 
-          <div className=" md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
+          <div className=" md:flex-row md:max-w-xl text-white">
+          {/* dark:border-gray-700 dark:bg-gray-800 */}
             <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
             <div className=" py-4">
               <p className=" catamaran text-base">
@@ -152,21 +158,23 @@ export default function Home() {
                 businesses?
               </p>
               <p className="catamaran text-xs flex">
-              {/* eslint-desable */} 
-               <img
+                {/* eslint-desable */}
+                <img
                   className=" w-[5rem] max-w-none mt-5 rounded-full bg-white/5 ring-1 ring-white/10"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/1DloogLwZhhbmtqxuhTcWw/df3fa64ee18890ab0aff70e1415bc09b/Testimonial_Dr-Bukky.png?h=86&q=90&w=86"
                   alt="App screenshot"
                   width={1920}
                   height={1080}
                 />
-                <b className="text-blue-400 ml-10 mr-0  mt-10">ALBERT LAMONT</b>
+                 <b className="ml-10 mr-1  mt-10">
+                  ALBERT LAMONT  
+                </b>
                 <span className="mt-10"> CEO, SWEATCAST</span>
               </p>
             </div>
           </div>
 
-          <div className=" md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
+          <div className=" md:flex-row md:max-w-xl text-white ">
             <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
             <div className=" py-4">
               <p className="catamaran  text-base">
@@ -174,7 +182,7 @@ export default function Home() {
                 factors should small businesses consider?
               </p>
               <p className="catamaran text-xs flex">
-                 {/* eslint-desable */}
+                {/* eslint-desable */}
                 <img
                   className=" w-[5rem] max-w-none mt-5 rounded-full bg-white/5 ring-1 ring-white/10"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/2vmIkgyTJv3CwYkblL3Ilk/3928a03e7f6399d1048a025c70d97f26/Gina-Downey.jpeg?h=86&q=90&w=86"
@@ -182,9 +190,10 @@ export default function Home() {
                   width={1920}
                   height={1080}
                 />
-
-                <b className="text-blue-400 ml-10 mr-0  mt-10">ALBERT LAMONT</b>
-                <span className="mt-10 "> CEO, SWEATCAST</span>
+  <b className="ml-10 mr-1  mt-10">
+                  ALBERT LAMONT  
+                </b>
+          <span className="mt-10 "> CEO, SWEATCAST</span>
               </p>
             </div>
           </div>
@@ -196,7 +205,7 @@ export default function Home() {
 
       {/* ***************** What you get with Bookxpert. ==> 5**************** */}
 
-      <div className=" text-center mx-auto justify-center">
+      <div className=" text-center mx-auto justify-center lg:py-20">
         <div className="text-center text-black">
           <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl font-medium sm:text-4xl md:text-xl">
             What you get with Bookxpert.{" "}
@@ -219,10 +228,11 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ***************** Hero Sections-Insightful ==> 6 **************** */}
-      <div className="flex  lg:flex-row flex-col-reverse justify-center md:py-12 md:px-6 gap-14 py-10  ">
+      {/* *************#f8f2cc**** Hero Sections-Insightful ==> 6 **************** */}
+      <div className="flex lg:flex-row flex-col-reverse justify-center md:py-12 bg-blue-500 md:px-6 gap-14 lg:py-28  "
+       //style={{'background-color':'#d4e3f9'}}
+      >
         <div className=" lg:w-5/12">
-                 {/* eslint-desable */}
           <img
             className="h-full md:mx-auto"
             src="https://images.ctfassets.net/88a6qmzs2wdz/6i5t90xcqiIUMW5oX5fqcP/b8452255e4ce062957732537a283fe8b/2023_Homepage_VP_ExpertSupport.png?h=354&q=90&w=570"
@@ -230,7 +240,7 @@ export default function Home() {
           />
         </div>
         <div className="w-full lg:w-5/12 flex flex-col justify-center">
-          <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-medium py-5 leading-10 text-gray-800 ">
+          <h1 className="PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-medium py-5 leading-10 text-gray-800 "   style={{color:'#084491'}}>
             {" "}
             Insightful Reports
           </h1>
@@ -242,18 +252,17 @@ export default function Home() {
             assist them with cash flow management and facing faceless
             assessments and audits.
           </p>
-          <button className="my-5 hover:rounded-bl-2xl hover:rounded-tr-2xl px-3 transition duration-150 ease-in-out py-2 mx-auto bg-transparent lg:ml-0  hover:bg-blue-900 text-blue-700 font-medium hover:text-white border border-blue-900 hover:border-transparent rounded">
+          <button className="my-5 hover:rounded-bl-2xl hover:rounded-tr-2xl px-3 transition duration-150 ease-in-out py-2 mx-auto bg-transparent lg:ml-0  hover:bg-blue-900 font-medium hover:text-white border border-blue-900 hover:border-transparent rounded">
             Learn More
           </button>
         </div>
       </div>
 
       {/* ***************** Hero Sections-Dedicated   ==> 7 **************** */}
-      <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
+      <div className="2xl:container 2xl:mx-auto  lg:px-20 md:py-12 md:px-6 lg:py-28 px-4" style={{'background-color':'#ecffff'}}>
         <div className="flex flex-col lg:flex-row justify-center gap-8">
           <div className="heading w-full lg:w-5/12 flex flex-col justify-center">
-            <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-medium py-5 leading-10 text-gray-800 ">
-              {" "}
+            <h1 className=" PatuaOne tracking-wider text-green-400 text-xl lg:text-4xl lg:text-left text-center font-medium py-5 leading-10">
               Dedicated Support
             </h1>
 
@@ -264,13 +273,14 @@ export default function Home() {
               and analyse all financial data, followed by expert verification
               and validation.
             </p>
-            <button className="my-5 py-2 px-3 hover:rounded-bl-2xl hover:rounded-tr-2xl mx-auto bg-transparent lg:ml-0  hover:bg-blue-900 text-blue-700 font-medium hover:text-white  border border-blue-900 hover:border-transparent rounded">
+            <button className="my-5 py-2 px-3 hover:rounded-bl-2xl hover:rounded-tr-2xl mx-auto bg-green-400 lg:ml-0  hover:bg-white hover:text-green-400 hover:border-green-500 font-medium text-white border hover:border-transparent rounded"
+            >
               Learn More
             </button>
           </div>
 
           <div className=" lg:w-5/12">
-                    {/* eslint-desable */}
+            {/* eslint-desable */}
             <img
               className="h-full md:mx-auto"
               src="https://images.ctfassets.net/88a6qmzs2wdz/60YZfXjE7UU0IqBarEgYK4/22461e400c9b393e8833046dd8fbeda6/2023_Homepage_VP_FinancialReporting.png?h=354&q=90&w=570"
@@ -281,9 +291,9 @@ export default function Home() {
       </div>
 
       {/* ***************** Hero Sections- Smooth Compliances  ==> 8**************** */}
-      <div className="flex  lg:flex-row flex-col-reverse justify-center md:py-12 md:px-6 gap-14 py-10  ">
+      <div className="flex  lg:flex-row flex-col-reverse justify-center md:py-12 md:px-6 gap-14 lg:py-28" style={{'background-color':'#f8f2cc'}}>
         <div className=" lg:w-5/12 ">
-                  {/* eslint-desable */}
+          {/* eslint-desable */}
           <img
             className="h-full md:mx-auto"
             src="https://images.ctfassets.net/88a6qmzs2wdz/6i5t90xcqiIUMW5oX5fqcP/b8452255e4ce062957732537a283fe8b/2023_Homepage_VP_ExpertSupport.png?h=354&q=90&w=570"
@@ -291,7 +301,7 @@ export default function Home() {
           />
         </div>
         <div className="w-full lg:w-5/12 flex flex-col justify-center">
-          <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-medium py-5 leading-10 text-gray-800 ">
+          <h1 className=" PatuaOne tracking-wider text-xl lg:text-4xl lg:text-left text-center font-medium py-5 leading-10 text-yellow-500 ">
             {" "}
             Smooth Compliances
           </h1>
@@ -303,7 +313,8 @@ export default function Home() {
             have all the records present with you at the time of filing your
             compliances
           </p>
-          <button className="my-5 py-2 px-3 hover:rounded-bl-2xl hover:rounded-tr-2xl mx-auto bg-transparent lg:ml-0  hover:bg-blue-900 text-blue-700 font-medium hover:text-white  border border-blue-900 hover:border-transparent rounded">
+          <button className="my-5 py-2 px-3 hover:rounded-bl-2xl hover:rounded-tr-2xl mx-auto bg-yellow-500 lg:ml-0  hover:text-yellow-500  font-medium hover:bg-transparent text-white  border hover:border-yellow-500 rounded">
+             {/* style={{'color':'#Fcd269'}} */}
             Learn More
           </button>
         </div>
@@ -313,13 +324,13 @@ export default function Home() {
       <Stats />
       {/* ++++++++++++++++++++++++++++++++++++++++++++ */}
 
-       {/* ***************** Accurate Books ==> 2 **************** */}
-       <div
+      {/* ***************** Accurate Books ==> 2 **************** */}
+      <div
         className="grid grid-cols-1 sm:grid-cols-1 py-16 xl:grid-cols-3 lg:flex "
         style={{ background: "#f7f8fa" }}
       >
         <div className="hidden lg:inline-block lg:pl-48">
-                  {/* eslint-desable */}
+          {/* eslint-desable */}
           <img
             className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             src="https://images.ctfassets.net/88a6qmzs2wdz/1dLJZFfakIm6ze6ySJAzRS/19329d5a2f956af08c6ec75c15fdf218/TaxHub-Left.png?h=236&q=90&w=170"
@@ -329,13 +340,12 @@ export default function Home() {
           />
         </div>
         <div className=" text-center lg:px-0 text-black lg:max-w-4xl lg:mx-auto">
-          
-     
           <h1 className="PatuaOne tracking-wider text-3xl lg:text-3xl lg:px-0 px-10 font-medium sm:text-4xl md:text-xl">
-          Are you ready for tax season?
+            Are you ready for tax season?
           </h1>
           <p className="catamaran my-3 text-base lg:min-w-xl lg:mx-auto text-black lg:px-10  px-10 font-medium">
-          Get exclusive access to deadline reminders, free checklists and more in our Tax Resource Hub.
+            Get exclusive access to deadline reminders, free checklists and more
+            in our Tax Resource Hub.
           </p>
 
           <button className="my-5 py-2 px-3 hover:rounded-bl-2xl hover:rounded-tr-2xl  bg-transparent hover:bg-blue-900 text-blue-900 font-medium text-base hover:text-white  border border-blue-900 hover:border-transparent rounded">
@@ -343,10 +353,12 @@ export default function Home() {
           </button>
 
           <p className="catamaran my-3 text-base lg:min-w-xl lg:mx-auto text-black lg:px-10  px-10 font-medium">
-          If you're several years behind on business taxes, get caught up and filed with Bench Retro.          </p>
+            If you're several years behind on business taxes, get caught up and
+            filed with Bench Retro.{" "}
+          </p>
         </div>
         <div className="mx-auto lg:pr-48">
-                  {/* eslint-desable */}
+          {/* eslint-desable */}
           <img
             className=" w-[10rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
             src="https://images.ctfassets.net/88a6qmzs2wdz/6tia5roEXDz2daFkUPIFMt/524a4ce1da60bbe68330d41cea3f0f3f/TaxHub-Right.png?h=235&q=90&w=170"
@@ -369,7 +381,7 @@ export default function Home() {
           <div className="w-3/4 mx-auto md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 ">
             <div className=" py-4">
               <div className="h-full   overflow-hidden">
-                        {/* eslint-desable */}
+                {/* eslint-desable */}
                 <img
                   className="lg:h-48 md:hidden lg:block w-full object-cover object-center"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/2v3J5YNdud9NcKqGroidGE/922b6535d87717d0e9579f959b39beb2/BenchBlog_TaxTips_17BigTaxDeductions.png?h=255&q=90&w=270"
@@ -412,7 +424,7 @@ export default function Home() {
             <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
             <div className=" py-4">
               <div className="h-full   overflow-hidden">
-                        {/* eslint-desable */}
+                {/* eslint-desable */}
                 <img
                   className="lg:h-48 md:hidden lg:block w-full object-cover object-center"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/2jaEUtWACoVyDdRGmWCLaN/6c5da6d1d352948f8378f2f9b145c177/BenchBlog_Top12Qs.png?h=255&q=90&w=270"
@@ -484,7 +496,7 @@ export default function Home() {
             <div className="w-x h-x md:w-x1 md:h-y1 lg:w-x2 lg:h-y2"></div>
             <div className=" py-4">
               <div className="h-full  overflow-hidden">
-                        {/* eslint-desable */}
+                {/* eslint-desable */}
                 <img
                   className="lg:h-48 md:hidden lg:block w-full object-cover object-center"
                   src="https://images.ctfassets.net/88a6qmzs2wdz/7Eu1demGJF7dvPI3H67Fv3/05d650cb773d41c921c1313657aca20a/BenchBlog_TaxTips_10Steps.png?h=255&q=90&w=270"
@@ -531,7 +543,7 @@ export default function Home() {
         style={{ background: "#062d60" }}
       >
         <div className="hidden  lg:inline-block lg:pl-52">
-                  {/* eslint-desable */}
+          {/* eslint-desable */}
           <img
             className="w-[10rem] max-w-none rounded-md"
             src="https://images.ctfassets.net/88a6qmzs2wdz/2e2TsIsGLaRNV65XbCPjNo/38bdefa478997663bad0f94e1be40529/Artboard_Copy.png?h=345&q=90&w=170"
@@ -557,8 +569,8 @@ export default function Home() {
         </div>
 
         <div className="hidden lg:block lg:pr-52">
-         {/* eslint-desable */}
-          <img 
+          {/* eslint-desable */}
+          <img
             className=" w-[10rem] max-w-none rounded-md"
             src="https://images.ctfassets.net/88a6qmzs2wdz/5BGb5uU22ZJAh7y63UZDvH/4109e19e0f4ba46d442ff27ed5c8fa2f/Artboard.png?h=345&q=90&w=170"
             alt="App screenshot"
@@ -567,9 +579,6 @@ export default function Home() {
           />
         </div>
       </div>
-
-
-      
     </div>
   );
 }

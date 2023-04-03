@@ -12,6 +12,19 @@
   line-height: 1.5;
 }
 
+
+
+
+/* ../images/bgimg.jpg  */
+.Ditch{
+  background-image: url('/bg-section1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
 /*  ************************  Paragraphs--> catamaran   *********************** */
 @font-face{
   font-family: catamaran;
